@@ -15,11 +15,15 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	public Button button1, button2, button3, button4, button5, button6, button7, button8, button9;
 	public boolean button1_on, button2_on, button3_on, button4_on, button5_on, button6_on, button7_on, button8_on, button9_on;
+	public TextView click_text; 
+
+	public int click_count = 0;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +41,7 @@ public class MainActivity extends Activity {
 		button7 = (Button) findViewById(R.id.button7);
 		button8 = (Button) findViewById(R.id.button8);
 		button9 = (Button) findViewById(R.id.button9);
-		
+		click_text = (TextView) findViewById(R.id.click_text_number_id);
 		initializeButtonColors();
 	}
 	
@@ -197,6 +201,9 @@ public class MainActivity extends Activity {
 			else {button6.setBackgroundColor(getResources().getColor(R.color.on)); button6_on = true;
 			}
 		}
+		click_count +=1;
+
+		click_text.setText(String.valueOf(click_count));
 		checkForWin();
 	}
 /*	
@@ -220,9 +227,7 @@ public class MainActivity extends Activity {
 					.setCancelable(false)
 					.setPositiveButton("Yes yes yes RIGHT NOW!",new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
-							// if this button is clicked, close
-							// current activity
-							initializeButtonColors();
+							resetGame();
 						}
 					  })
 					.setNegativeButton("no I don't like fun",new DialogInterface.OnClickListener() {
@@ -239,7 +244,6 @@ public class MainActivity extends Activity {
 					// show it
 					alertDialog.show();
 				}				
-		
 	}
 	
 	@Override
@@ -252,12 +256,19 @@ public class MainActivity extends Activity {
 		case (MotionEvent.ACTION_POINTER_UP) : 
 			Toast.makeText(getApplicationContext(), "Game reset",
 					   Toast.LENGTH_SHORT).show();
-			initializeButtonColors();
+		resetGame();
+			
 		return true;
 		
 		default:
 			return super.onTouchEvent(event);
 		}
+	}
+	
+	private void resetGame() {
+		click_count = 0;
+		click_text.setText(String.valueOf(click_count));
+		initializeButtonColors();
 	}
 	private void initializeButtonColors() {
 		Random random = new Random();

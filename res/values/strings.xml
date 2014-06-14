@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">lightsout</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="app_name">Lights OUT</string>
+    <string name="click_text">Click #: </string>
+	<string name="click_number">0</string>
+	<string name="time">Time passed: </string>
+	<string name="time_number">0</string>
 </resources>
