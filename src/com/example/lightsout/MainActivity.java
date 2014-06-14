@@ -3,6 +3,10 @@ package com.example.lightsout;
 import java.util.Random;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.app.Notification.Builder;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -200,17 +204,47 @@ public class MainActivity extends Activity {
 	*/
 	
 	private void checkForWin() {
-		if (!(button1_on && button2_on && button3_on && button4_on && button5_on && button6_on && button7_on && button8_on && button9_on)) {
-			//say that we won
-		}
+		if (!(button1_on || button2_on || button3_on || button4_on || button5_on || button6_on || button7_on || button8_on || button9_on)) {
+			AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+					this);
+	 
+				// set title
+				alertDialogBuilder.setTitle("YOU WON!");
+	 
+				// set dialog message
+				alertDialogBuilder
+					.setMessage("Play again?")
+					.setCancelable(false)
+					.setPositiveButton("Yes yes yes RIGHT NOW!",new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int id) {
+							// if this button is clicked, close
+							// current activity
+							initializeButtonColors();
+						}
+					  })
+					.setNegativeButton("no I don't like fun",new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int id) {
+							// if this button is clicked, just close
+							// the dialog box and do nothing
+							dialog.cancel();
+						}
+					});
+	 
+					// create alert dialog
+					AlertDialog alertDialog = alertDialogBuilder.create();
+	 
+					// show it
+					alertDialog.show();
+				}				
+		
 	}
 	private void initializeButtonColors() {
 		Random random = new Random();
 		button1_on = random.nextBoolean();
 		if(button1_on) {
-			button1.setBackgroundColor(getResources().getColor(R.color.on));				
+			button1.setBackgroundColor(getResources().getColor(R.color.on));	
 		} else {
-			button2.setBackgroundColor(getResources().getColor(R.color.off));				
+			button1.setBackgroundColor(getResources().getColor(R.color.off));				
 		}
 
 		button2_on = random.nextBoolean();
