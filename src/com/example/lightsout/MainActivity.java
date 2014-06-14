@@ -8,11 +8,14 @@ import android.content.DialogInterface;
 import android.app.Notification.Builder;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.view.MotionEventCompat;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	public Button button1, button2, button3, button4, button5, button6, button7, button8, button9;
@@ -237,6 +240,24 @@ public class MainActivity extends Activity {
 					alertDialog.show();
 				}				
 		
+	}
+	
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		int action = MotionEventCompat.getActionMasked(event);
+		switch(action) {
+		case (MotionEvent.ACTION_DOWN) :
+		case (MotionEvent.ACTION_POINTER_DOWN) :
+		case (MotionEvent.ACTION_UP) :
+		case (MotionEvent.ACTION_POINTER_UP) : 
+			Toast.makeText(getApplicationContext(), "Game reset",
+					   Toast.LENGTH_SHORT).show();
+			initializeButtonColors();
+		return true;
+		
+		default:
+			return super.onTouchEvent(event);
+		}
 	}
 	private void initializeButtonColors() {
 		Random random = new Random();
