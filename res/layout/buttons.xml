@@ -70,8 +70,7 @@
          style="@string/time"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:orientation="horizontal"
- >
+         android:orientation="horizontal" >
 
 		<LinearLayout
 	 	 android:layout_width="match_parent"
@@ -84,7 +83,7 @@
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="@string/click_text"
-             android:textSize="10sp" />		
+             android:textSize="18sp" />		
 		<TextView
              android:id="@+id/click_text_number_id"
              android:layout_width="wrap_content"
@@ -102,37 +101,21 @@
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="@string/time"
-             android:textSize="10sp" />
-		    
-		    <TextView
+             android:textSize="18sp" />
+
+         <Chronometer
              android:id="@+id/time_id_number"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:text="@string/time_number"
-             android:textSize="20sp" />
+             android:textSize="20sp"
+             android:text="Chronometer" />
+<!-- 		    
+             android:text="@string/time_number" -->
+
 
 
          </LinearLayout>
      </RelativeLayout>
-<!--      <RelativeLayout
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:orientation="horizontal" >
-         <TextView
-             android:id="@+id/time_id_number"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="@string/time_number" />
-
-         <TextView
-             android:id="@+id/time_id"
-             android:layout_height="wrap_content"
-             android:layout_weight="0.04"
-             android:text="@string/time"
-             android:textAlignment="gravity" />
-     </RelativeLayout>
- -->
-
 	</TableLayout>
 
 

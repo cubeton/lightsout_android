@@ -8,20 +8,24 @@ import android.content.DialogInterface;
 import android.app.Notification.Builder;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v4.view.MotionEventCompat;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Chronometer;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	public Button button1, button2, button3, button4, button5, button6, button7, button8, button9;
 	public boolean button1_on, button2_on, button3_on, button4_on, button5_on, button6_on, button7_on, button8_on, button9_on;
-	public TextView click_text; 
+	public TextView click_text;
+	public Chronometer time_text; 
 
 	public int click_count = 0;
 	
@@ -42,9 +46,28 @@ public class MainActivity extends Activity {
 		button8 = (Button) findViewById(R.id.button8);
 		button9 = (Button) findViewById(R.id.button9);
 		click_text = (TextView) findViewById(R.id.click_text_number_id);
+		time_text = (Chronometer) findViewById(R.id.time_id_number);
+		time_text.start();
+		
 		initializeButtonColors();
 	}
 	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.mainmenu, menu);
+		return true;
+	}
+	
+	@Override 
+	public boolean onOptionsItemSelected(MenuItem item) {
+		if(item.getItemId() == R.id.action_refresh) {
+			Toast.makeText(getApplicationContext(), "Game reset",
+					   Toast.LENGTH_SHORT).show();
+			resetGame();
+		}
+		return true;
+	}
 	public void onClick(View v) {
 		if(v.getId() == R.id.button1) {
 			if(button1_on) { 
@@ -215,6 +238,7 @@ public class MainActivity extends Activity {
 	
 	private void checkForWin() {
 		if (!(button1_on || button2_on || button3_on || button4_on || button5_on || button6_on || button7_on || button8_on || button9_on)) {
+			time_text.stop();
 			AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
 					this);
 	 
@@ -246,29 +270,12 @@ public class MainActivity extends Activity {
 				}				
 	}
 	
-	@Override
-	public boolean onTouchEvent(MotionEvent event) {
-		int action = MotionEventCompat.getActionMasked(event);
-		switch(action) {
-		case (MotionEvent.ACTION_DOWN) :
-		case (MotionEvent.ACTION_POINTER_DOWN) :
-		case (MotionEvent.ACTION_UP) :
-		case (MotionEvent.ACTION_POINTER_UP) : 
-			Toast.makeText(getApplicationContext(), "Game reset",
-					   Toast.LENGTH_SHORT).show();
-		resetGame();
-			
-		return true;
-		
-		default:
-			return super.onTouchEvent(event);
-		}
-	}
-	
 	private void resetGame() {
 		click_count = 0;
 		click_text.setText(String.valueOf(click_count));
 		initializeButtonColors();
+		time_text.setBase(SystemClock.elapsedRealtime());
+		time_text.start();
 	}
 	private void initializeButtonColors() {
 		Random random = new Random();
