@@ -6,6 +6,8 @@
 	<string name="click_number">0</string>
 	<string name="time">Time passed: </string>
 	<string name="intro">Gameplay Instructions</string>
+	<string name="menu_item_play">Play Game</string>
+	<string name="menu_item_help">Instructions</string>
 	<string name="intructions">The goal is to turn all the lights OUT!
 	\n\n\nYou can do so by pressing the buttons.
 	\n\nThere are three types of buttons: corner, edge, and center.

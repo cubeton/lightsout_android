@@ -77,7 +77,13 @@ public class MainActivity extends Activity {
 					   Toast.LENGTH_SHORT).show();
 			resetGame();
 			break;
+		case (android.R.id.home) :
+		    Intent homeIntent = new Intent(Intent.ACTION_MAIN);
+			homeIntent.addCategory(Intent.CATEGORY_HOME);
+			startActivity(homeIntent);
+			break;
 		}
+	
 		return true;
 	}
 	
@@ -250,6 +256,7 @@ public class MainActivity extends Activity {
 		checkForWin();
 	}
 
+	
 	private void checkForWin() {
 		if (!(button1_on || button2_on || button3_on || button4_on || button5_on || button6_on || button7_on || button8_on || button9_on)) {
 			time_text.stop();
