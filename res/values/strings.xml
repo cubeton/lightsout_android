@@ -5,5 +5,13 @@
     <string name="click_text">Click #: </string>
 	<string name="click_number">0</string>
 	<string name="time">Time passed: </string>
-	<string name="time_number">0</string>
+	<string name="intro">Gameplay Instructions</string>
+	<string name="intructions">The goal is to turn all the lights OUT!
+	\n\n\nYou can do so by pressing the buttons.
+	\n\nThere are three types of buttons: corner, edge, and center.
+	\n\nCorner buttons toggle the four lights in the corner on and off.
+	\n\nEdge buttons toggle the two neighboring lights on and off.
+	\n\nThe center button toggles itself and the four lights surrounding it on and off.
+	\n\nUse these to turn the lights out!	
+	\n\n\n<i>Or are you scared of the dark?</i></string>
 </resources>

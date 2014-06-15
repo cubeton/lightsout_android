@@ -2,9 +2,11 @@ package com.example.lightsout;
 
 import java.util.Random;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.app.Notification.Builder;
 import android.content.Context;
 import android.os.Bundle;
@@ -33,8 +35,10 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		//Now the buttons are set, add them to the screen
 		setContentView(R.layout.buttons);		
+		
+		ActionBar actionBar = getActionBar();
+		actionBar.setDisplayHomeAsUpEnabled(true);
 		
 		button1 = (Button) findViewById(R.id.button1);
 		button2 = (Button) findViewById(R.id.button2);
@@ -49,6 +53,8 @@ public class MainActivity extends Activity {
 		time_text = (Chronometer) findViewById(R.id.time_id_number);
 		time_text.start();
 		
+		
+	
 		initializeButtonColors();
 	}
 	
@@ -61,13 +67,27 @@ public class MainActivity extends Activity {
 	
 	@Override 
 	public boolean onOptionsItemSelected(MenuItem item) {
-		if(item.getItemId() == R.id.action_refresh) {
+		switch(item.getItemId()) {
+		case (R.id.action_help) :
+			Intent myIntent = new Intent(MainActivity.this, HelpActivity.class);
+			MainActivity.this.startActivity(myIntent);	
+			break;
+		case (R.id.action_refresh) :
 			Toast.makeText(getApplicationContext(), "Game reset",
 					   Toast.LENGTH_SHORT).show();
 			resetGame();
+			break;
 		}
 		return true;
 	}
+	
+/*	//May not actually want to have this behavior on pause. Need to decide.
+	@Override
+	public void onPause() {
+	    super.onPause();  // Always call the superclass method first
+		resetGame();
+	}
+	*/
 	public void onClick(View v) {
 		if(v.getId() == R.id.button1) {
 			if(button1_on) { 
@@ -229,13 +249,7 @@ public class MainActivity extends Activity {
 		click_text.setText(String.valueOf(click_count));
 		checkForWin();
 	}
-/*	
-	private void toggleButton(Button button, boolean light_status) {
-		if(light_status) { button.setBackgroundColor(getResources().getColor(R.color.off)); light_status = false; } else {	button1.setBackgroundColor(getResources().getColor(R.color.on)); light_status = true;
-		}	
-	}
-	*/
-	
+
 	private void checkForWin() {
 		if (!(button1_on || button2_on || button3_on || button4_on || button5_on || button6_on || button7_on || button8_on || button9_on)) {
 			time_text.stop();
