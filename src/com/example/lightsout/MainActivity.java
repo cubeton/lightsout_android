@@ -69,8 +69,10 @@ public class MainActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch(item.getItemId()) {
 		case (R.id.action_help) :
-			Intent myIntent = new Intent(MainActivity.this, HelpActivity.class);
-			MainActivity.this.startActivity(myIntent);	
+			Intent myIntent = new Intent(this, HelpActivity.class);
+			startActivityForResult(myIntent, 1);
+			/*Intent myIntent = new Intent(MainActivity.this, HelpActivity.class);
+			MainActivity.this.startActivity(myIntent);	*/
 			break;
 		case (R.id.action_refresh) :
 			Toast.makeText(getApplicationContext(), "Game reset",
@@ -78,9 +80,9 @@ public class MainActivity extends Activity {
 			resetGame();
 			break;
 		case (android.R.id.home) :
-		    Intent homeIntent = new Intent(Intent.ACTION_MAIN);
-			homeIntent.addCategory(Intent.CATEGORY_HOME);
-			startActivity(homeIntent);
+			Intent returnIntent = new Intent();
+			setResult(RESULT_OK, returnIntent);
+			finish();
 			break;
 		}
 	

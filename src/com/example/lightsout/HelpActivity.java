@@ -16,8 +16,9 @@ public class HelpActivity extends Activity {
 	}
 	
 	public boolean onOptionsItemSelected(MenuItem item){
-	    Intent myIntent = new Intent(getApplicationContext(), MainActivity.class);
-	    startActivityForResult(myIntent, 0);
+		Intent returnIntent = new Intent();
+		setResult(RESULT_OK, returnIntent);
+		finish();
 	    return true;
 	}
 }

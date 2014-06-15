@@ -5,6 +5,7 @@
     <color name="title_color">#f0f0f0</color>
     <color name="menu_color">#FAEF52</color>
 	<color name="menu_glow">#9C9756</color>
+	<color name="help_color">#000000</color>
     
     
 </resources>
