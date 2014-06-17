@@ -1,6 +1,7 @@
 package com.meghan.lightsout;
 
 import java.util.Random;
+
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
@@ -11,6 +12,7 @@ import android.app.Notification.Builder;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.os.Vibrator;
 import android.support.v4.view.MotionEventCompat;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -28,6 +30,7 @@ public class MainActivity extends Activity {
 	public boolean button1_on, button2_on, button3_on, button4_on, button5_on, button6_on, button7_on, button8_on, button9_on;
 	public TextView click_text;
 	public Chronometer time_text; 
+	public Vibrator haptic;
 
 	public int click_count = 0;
 	
@@ -52,7 +55,7 @@ public class MainActivity extends Activity {
 		click_text = (TextView) findViewById(R.id.click_text_number_id);
 		time_text = (Chronometer) findViewById(R.id.time_id_number);
 		time_text.start();
-		
+	    haptic = (Vibrator) this.getSystemService(VIBRATOR_SERVICE);		
 		
 	
 		initializeButtonColors();
@@ -91,6 +94,8 @@ public class MainActivity extends Activity {
 
 	@SuppressLint("NewApi")
 	public void onClick(View v) {
+		Vibrator hap = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+		hap.vibrate(20);
 		if(v.getId() == R.id.button1) {
 			if(button1_on) { 
 				button1.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button1_on = false; }

@@ -23,7 +23,8 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="19dp"
             android:text="@string/intructions"
-            android:textColor="@color/help_color" />
+            android:textColor="@color/help_color"
+            android:textSize="15dp" />
     </ScrollView>
 
 </RelativeLayout>
