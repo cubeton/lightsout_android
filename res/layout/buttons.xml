@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	    android:background="@drawable/game_background">
 	<TableLayout android:id="@+id/TableLayout01"
+	    
 		android:stretchColumns="*" android:layout_height="fill_parent"
 		android:layout_width="fill_parent" android:layout_centerInParent="true">
 		<TableRow android:id="@+id/TableRow01" android:layout_width="fill_parent"
@@ -10,18 +12,21 @@
 			    android:id="@+id/button1"
 			    android:layout_margin="5dp" android:layout_weight="1"
 				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:background="@drawable/shape_on"
 				android:onClick="onClick"
 				/>
 			<Button
 			    android:id="@+id/button2"
 			    android:layout_weight="1" android:layout_margin="5dp"
 				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:background="@drawable/shape_off"
 				android:onClick="onClick"
 				/>
 			<Button
 			    android:id="@+id/button3"
 			    android:layout_weight="1" android:layout_margin="5dp"
 				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:background="@drawable/shape_on"				
 				android:onClick="onClick"
 				/>
 		</TableRow>
@@ -31,16 +36,19 @@
 			    android:id="@+id/button4"
 			    android:layout_weight="1" android:layout_margin="5dp"
 				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:background="@drawable/shape_on"
 				android:onClick="onClick"
 				/>
 			<Button
 			    android:id="@+id/button5" android:layout_margin="5dp" android:layout_weight="1"
 				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:background="@drawable/shape_on"
 				android:onClick="onClick"
 				/>
 			<Button
 			    android:id="@+id/button6" android:layout_weight="1" android:layout_margin="5dp"
 				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:background="@drawable/shape_on"
 				android:onClick="onClick"
 				/>
 		</TableRow>
@@ -50,18 +58,21 @@
 			    android:id="@+id/button7"
 			    android:layout_weight="1" android:layout_margin="5dp"
 				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:background="@drawable/shape_on"
 				android:onClick="onClick"
 				/>
 			<Button
 			    android:id="@+id/button8"
 			    android:layout_margin="5dp" android:layout_weight="1"
 				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:background="@drawable/shape_on"
 				android:onClick="onClick"
 				/>
 			<Button
 			    android:id="@+id/button9"
 			    android:layout_weight="1" android:layout_margin="5dp"
 				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:background="@drawable/shape_on"
 				android:onClick="onClick"
 				/>
 		</TableRow>
@@ -84,33 +95,38 @@
              android:layout_height="wrap_content"
              android:text="@string/click_text"
              android:layout_marginLeft="10dp"
-             android:textSize="18sp" />		
+             android:textSize="18sp"
+             android:textColor="@color/play_color" />		
 		<TextView
              android:id="@+id/click_text_number_id"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="@string/click_number"
-             android:textSize="20sp"  />  			    
+             android:textSize="20sp"
+             android:textColor="@color/play_color"   />  			    
 		</LinearLayout>
 		<LinearLayout
 	 	 android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:orientation="horizontal"
-         android:gravity="right">
+         android:gravity="right"
+>
          <TextView
              android:id="@+id/time_id"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="@string/time"
-             android:textSize="18sp" />
+             android:textSize="18sp"
+             android:textColor="@color/play_color" />
 
          <Chronometer
              android:id="@+id/time_id_number"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:textSize="20sp"
-                     android:layout_marginRight="10dp"
-             android:text="Chronometer" />
+             android:layout_marginRight="10dp"
+             android:text="Chronometer"
+             android:textColor="@color/play_color"  />
          </LinearLayout>
      </RelativeLayout>
 	</TableLayout>

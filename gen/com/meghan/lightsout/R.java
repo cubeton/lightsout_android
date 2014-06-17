@@ -11,12 +11,11 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int help_color=0x7f040005;
-        public static final int menu_color=0x7f040003;
-        public static final int menu_glow=0x7f040004;
-        public static final int off=0x7f040001;
-        public static final int on=0x7f040000;
-        public static final int title_color=0x7f040002;
+        public static final int help_color=0x7f040004;
+        public static final int menu_color=0x7f040002;
+        public static final int menu_glow=0x7f040003;
+        public static final int play_color=0x7f040000;
+        public static final int title_color=0x7f040001;
     }
     public static final class dimen {
         public static final int menu_item_size=0x7f050001;
@@ -25,19 +24,22 @@ public final class R {
     public static final class drawable {
         public static final int background=0x7f020000;
         public static final int background_help=0x7f020001;
-        public static final int help_background=0x7f020002;
-        public static final int ic_action_help=0x7f020003;
-        public static final int ic_action_refresh=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
+        public static final int game_background=0x7f020002;
+        public static final int help_background=0x7f020003;
+        public static final int ic_action_help=0x7f020004;
+        public static final int ic_action_refresh=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int shape_off=0x7f020007;
+        public static final int shape_on=0x7f020008;
     }
     public static final class id {
         public static final int ListView_Menu=0x7f090014;
         public static final int RelativeLayout02=0x7f090013;
         public static final int TableLayout01=0x7f090000;
         public static final int TableRow01=0x7f090001;
-        public static final int action_help=0x7f090015;
-        public static final int action_refresh=0x7f090016;
-        public static final int action_settings=0x7f090017;
+        public static final int action_help=0x7f090017;
+        public static final int action_refresh=0x7f090018;
+        public static final int action_settings=0x7f090019;
         public static final int button1=0x7f090002;
         public static final int button2=0x7f090003;
         public static final int button3=0x7f090004;
@@ -52,6 +54,8 @@ public final class R {
         public static final int instructions=0x7f090010;
         public static final int main_menu_relative_layout=0x7f090011;
         public static final int main_menu_text_view_1=0x7f090012;
+        public static final int off=0x7f090015;
+        public static final int on=0x7f090016;
         public static final int scroller_id=0x7f09000f;
         public static final int time_id=0x7f09000d;
         public static final int time_id_number=0x7f09000e;

@@ -1,7 +1,7 @@
 package com.meghan.lightsout;
 
 import java.util.Random;
-
+import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -89,166 +89,167 @@ public class MainActivity extends Activity {
 	}
 	
 
+	@SuppressLint("NewApi")
 	public void onClick(View v) {
 		if(v.getId() == R.id.button1) {
 			if(button1_on) { 
-				button1.setBackgroundColor(getResources().getColor(R.color.off)); button1_on = false; }
-			else {button1.setBackgroundColor(getResources().getColor(R.color.on)); button1_on = true;
+				button1.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button1_on = false; }
+			else {button1.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button1_on = true;
 			}
 
 			if(button2_on) { 
-				button2.setBackgroundColor(getResources().getColor(R.color.off)); button2_on = false; }
-			else {button2.setBackgroundColor(getResources().getColor(R.color.on)); button2_on = true;
+				button2.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button2_on = false; }
+			else {button2.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button2_on = true;
 			}
 			if(button4_on) { 
-				button4.setBackgroundColor(getResources().getColor(R.color.off)); button4_on = false; }
-			else {button4.setBackgroundColor(getResources().getColor(R.color.on)); button4_on = true;
+				button4.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button4_on = false; }
+			else {button4.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button4_on = true;
 			}
 			if(button5_on) { 
-				button5.setBackgroundColor(getResources().getColor(R.color.off)); button5_on = false; }
-			else {button5.setBackgroundColor(getResources().getColor(R.color.on)); button5_on = true;
+				button5.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button5_on = false; }
+			else {button5.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button5_on = true;
 			}
 		}
 		
 		if(v.getId() == R.id.button2) {
 			if(button1_on) { 
-				button1.setBackgroundColor(getResources().getColor(R.color.off)); button1_on = false; }
-			else {button1.setBackgroundColor(getResources().getColor(R.color.on)); button1_on = true;
+				button1.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button1_on = false; }
+			else {button1.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button1_on = true;
 			}
 			if(button2_on) { 
-				button2.setBackgroundColor(getResources().getColor(R.color.off)); button2_on = false; }
-			else {button2.setBackgroundColor(getResources().getColor(R.color.on)); button2_on = true;
+				button2.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button2_on = false; }
+			else {button2.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button2_on = true;
 			}
 			if(button3_on) { 
-				button3.setBackgroundColor(getResources().getColor(R.color.off)); button3_on = false; }
-			else {button3.setBackgroundColor(getResources().getColor(R.color.on)); button3_on = true;
+				button3.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button3_on = false; }
+			else {button3.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button3_on = true;
 			}
 		}
 		
 		if(v.getId() == R.id.button3) {
 			if(button2_on) { 
-				button2.setBackgroundColor(getResources().getColor(R.color.off)); button2_on = false; }
-			else {button2.setBackgroundColor(getResources().getColor(R.color.on)); button2_on = true;
+				button2.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button2_on = false; }
+			else {button2.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button2_on = true;
 			}
 			if(button3_on) { 
-				button3.setBackgroundColor(getResources().getColor(R.color.off)); button3_on = false; }
-			else {button3.setBackgroundColor(getResources().getColor(R.color.on)); button3_on = true;
+				button3.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button3_on = false; }
+			else {button3.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button3_on = true;
 			}
 			if(button5_on) { 
-				button5.setBackgroundColor(getResources().getColor(R.color.off)); button5_on = false; }
-			else {button5.setBackgroundColor(getResources().getColor(R.color.on)); button5_on = true;
+				button5.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button5_on = false; }
+			else {button5.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button5_on = true;
 			}			
 			if(button6_on) { 
-				button6.setBackgroundColor(getResources().getColor(R.color.off)); button6_on = false; }
-			else {button6.setBackgroundColor(getResources().getColor(R.color.on)); button6_on = true;
+				button6.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button6_on = false; }
+			else {button6.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button6_on = true;
 			}
 		}
 		
 		if(v.getId() == R.id.button4) {
 			if(button1_on) { 
-				button1.setBackgroundColor(getResources().getColor(R.color.off)); button1_on = false; }
-			else {button1.setBackgroundColor(getResources().getColor(R.color.on)); button1_on = true;
+				button1.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button1_on = false; }
+			else {button1.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button1_on = true;
 			}
 			if(button4_on) { 
-				button4.setBackgroundColor(getResources().getColor(R.color.off)); button4_on = false; }
-			else {button4.setBackgroundColor(getResources().getColor(R.color.on)); button4_on = true;
+				button4.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button4_on = false; }
+			else {button4.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button4_on = true;
 			}
 			if(button7_on) { 
-				button7.setBackgroundColor(getResources().getColor(R.color.off)); button7_on = false; }
-			else {button7.setBackgroundColor(getResources().getColor(R.color.on)); button7_on = true;
+				button7.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button7_on = false; }
+			else {button7.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button7_on = true;
 			}
 		}
 		
 		if(v.getId() == R.id.button5) {
 
 			if(button5_on) { 
-				button5.setBackgroundColor(getResources().getColor(R.color.off)); button5_on = false; }
-			else {button5.setBackgroundColor(getResources().getColor(R.color.on)); button5_on = true;
+				button5.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button5_on = false; }
+			else {button5.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button5_on = true;
 			}
 			if(button2_on) { 
-				button2.setBackgroundColor(getResources().getColor(R.color.off)); button2_on = false; }
-			else {button2.setBackgroundColor(getResources().getColor(R.color.on)); button2_on = true;
+				button2.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button2_on = false; }
+			else {button2.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button2_on = true;
 			}	
 			if(button4_on) { 
-				button4.setBackgroundColor(getResources().getColor(R.color.off)); button4_on = false; }
-			else {button4.setBackgroundColor(getResources().getColor(R.color.on)); button4_on = true;
+				button4.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button4_on = false; }
+			else {button4.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button4_on = true;
 			}
 			if(button6_on) { 
-				button6.setBackgroundColor(getResources().getColor(R.color.off)); button6_on = false; }
-			else {button6.setBackgroundColor(getResources().getColor(R.color.on)); button6_on = true;
+				button6.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button6_on = false; }
+			else {button6.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button6_on = true;
 			}
 			if(button8_on) { 
-				button8.setBackgroundColor(getResources().getColor(R.color.off)); button8_on = false; }
-			else {button8.setBackgroundColor(getResources().getColor(R.color.on)); button8_on = true;
+				button8.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button8_on = false; }
+			else {button8.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button8_on = true;
 			}
 		}
 		
 		if(v.getId() == R.id.button6) {
 
 			if(button6_on) { 
-				button6.setBackgroundColor(getResources().getColor(R.color.off)); button6_on = false; }
-			else {button6.setBackgroundColor(getResources().getColor(R.color.on)); button6_on = true;
+				button6.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button6_on = false; }
+			else {button6.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button6_on = true;
 			}
 			if(button3_on) { 
-				button3.setBackgroundColor(getResources().getColor(R.color.off)); button3_on = false; }
-			else {button3.setBackgroundColor(getResources().getColor(R.color.on)); button3_on = true;
+				button3.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button3_on = false; }
+			else {button3.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button3_on = true;
 			}
 			if(button9_on) { 
-				button9.setBackgroundColor(getResources().getColor(R.color.off)); button9_on = false; }
-			else {button9.setBackgroundColor(getResources().getColor(R.color.on)); button9_on = true;
+				button9.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button9_on = false; }
+			else {button9.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button9_on = true;
 			}
 		}
 		
 		if(v.getId() == R.id.button7) {
 
 			if(button7_on) { 
-				button7.setBackgroundColor(getResources().getColor(R.color.off)); button7_on = false; }
-			else {button7.setBackgroundColor(getResources().getColor(R.color.on)); button7_on = true;
+				button7.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button7_on = false; }
+			else {button7.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button7_on = true;
 			}
 			if(button4_on) { 
-				button4.setBackgroundColor(getResources().getColor(R.color.off)); button4_on = false; }
-			else {button4.setBackgroundColor(getResources().getColor(R.color.on)); button4_on = true;
+				button4.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button4_on = false; }
+			else {button4.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button4_on = true;
 			}
 			if(button5_on) { 
-				button5.setBackgroundColor(getResources().getColor(R.color.off)); button5_on = false; }
-			else {button5.setBackgroundColor(getResources().getColor(R.color.on)); button5_on = true;
+				button5.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button5_on = false; }
+			else {button5.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button5_on = true;
 			}	
 			if(button8_on) { 
-				button8.setBackgroundColor(getResources().getColor(R.color.off)); button8_on = false; }
-			else {button8.setBackgroundColor(getResources().getColor(R.color.on)); button8_on = true;
+				button8.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button8_on = false; }
+			else {button8.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button8_on = true;
 			}
 		}
 		
 		if(v.getId() == R.id.button8) {
 			if(button7_on) { 
-				button7.setBackgroundColor(getResources().getColor(R.color.off)); button7_on = false; }
-			else {button7.setBackgroundColor(getResources().getColor(R.color.on)); button7_on = true;
+				button7.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button7_on = false; }
+			else {button7.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button7_on = true;
 			}
 			if(button8_on) { 
-				button8.setBackgroundColor(getResources().getColor(R.color.off)); button8_on = false; }
-			else {button8.setBackgroundColor(getResources().getColor(R.color.on)); button8_on = true;
+				button8.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button8_on = false; }
+			else {button8.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button8_on = true;
 			}
 			if(button9_on) { 
-				button9.setBackgroundColor(getResources().getColor(R.color.off)); button9_on = false; }
-			else {button9.setBackgroundColor(getResources().getColor(R.color.on)); button9_on = true;
+				button9.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button9_on = false; }
+			else {button9.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button9_on = true;
 			}
 		}
 		if(v.getId() == R.id.button9) {
 			if(button5_on) { 
-				button5.setBackgroundColor(getResources().getColor(R.color.off)); button5_on = false; }
-			else {button5.setBackgroundColor(getResources().getColor(R.color.on)); button5_on = true;
+				button5.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button5_on = false; }
+			else {button5.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button5_on = true;
 			}	
 			if(button9_on) { 
-				button9.setBackgroundColor(getResources().getColor(R.color.off)); button9_on = false; }
-			else {button9.setBackgroundColor(getResources().getColor(R.color.on)); button9_on = true;
+				button9.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button9_on = false; }
+			else {button9.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button9_on = true;
 			}
 			if(button8_on) { 
-				button8.setBackgroundColor(getResources().getColor(R.color.off)); button8_on = false; }
-			else {button8.setBackgroundColor(getResources().getColor(R.color.on)); button8_on = true;
+				button8.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button8_on = false; }
+			else {button8.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button8_on = true;
 			}
 			if(button6_on) { 
-				button6.setBackgroundColor(getResources().getColor(R.color.off)); button6_on = false; }
-			else {button6.setBackgroundColor(getResources().getColor(R.color.on)); button6_on = true;
+				button6.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button6_on = false; }
+			else {button6.setBackground(getResources().getDrawable(R.drawable.shape_on));	 button6_on = true;
 			}
 		}
 		click_count +=1;
@@ -300,75 +301,76 @@ public class MainActivity extends Activity {
 		time_text.start();
 	}
 	
+	@SuppressLint("NewApi")
 	private void initializeButtonColors() {
 		Random random = new Random();
 		button1_on = random.nextBoolean();
 		if(button1_on) {
-			button1.setBackgroundColor(getResources().getColor(R.color.on));	
+			button1.setBackground(getResources().getDrawable(R.drawable.shape_on));	
 		} else {
-			button1.setBackgroundColor(getResources().getColor(R.color.off));				
+			button1.setBackground(getResources().getDrawable(R.drawable.shape_off));					
 		}
 
 		button2_on = random.nextBoolean();
 		if(button2_on) {
-			button2.setBackgroundColor(getResources().getColor(R.color.on));				
+			button2.setBackground(getResources().getDrawable(R.drawable.shape_on));					
 		} else {
-			button2.setBackgroundColor(getResources().getColor(R.color.off));				
+			button2.setBackground(getResources().getDrawable(R.drawable.shape_off));					
 		}
 
 		
 		button3_on = random.nextBoolean();
 		if(button3_on) {
-			button3.setBackgroundColor(getResources().getColor(R.color.on));				
+			button3.setBackground(getResources().getDrawable(R.drawable.shape_on));					
 		} else {
-			button3.setBackgroundColor(getResources().getColor(R.color.off));				
+			button3.setBackground(getResources().getDrawable(R.drawable.shape_off));					
 		}
 
 		
 		button4_on = random.nextBoolean();
 		if(button4_on) {
-			button4.setBackgroundColor(getResources().getColor(R.color.on));				
+			button4.setBackground(getResources().getDrawable(R.drawable.shape_on));					
 		} else {
-			button4.setBackgroundColor(getResources().getColor(R.color.off));				
+			button4.setBackground(getResources().getDrawable(R.drawable.shape_off));					
 		}
 
 		
 		button5_on = random.nextBoolean();
 		if(button5_on) {
-			button5.setBackgroundColor(getResources().getColor(R.color.on));				
+			button5.setBackground(getResources().getDrawable(R.drawable.shape_on));					
 		}  else {
-			button5.setBackgroundColor(getResources().getColor(R.color.off));				
+			button5.setBackground(getResources().getDrawable(R.drawable.shape_off));					
 		}
 
 		
 		button6_on = random.nextBoolean();
 		if(button6_on) {
-			button6.setBackgroundColor(getResources().getColor(R.color.on));				
+			button6.setBackground(getResources().getDrawable(R.drawable.shape_on));					
 		} else {
-			button6.setBackgroundColor(getResources().getColor(R.color.on));				
+			button6.setBackground(getResources().getDrawable(R.drawable.shape_on));					
 		}
 
 		
 		button7_on = random.nextBoolean();
 		if(button7_on) {
-			button7.setBackgroundColor(getResources().getColor(R.color.on));				
+			button7.setBackground(getResources().getDrawable(R.drawable.shape_on));					
 		} else {
-			button7.setBackgroundColor(getResources().getColor(R.color.off));				
+			button7.setBackground(getResources().getDrawable(R.drawable.shape_off));					
 		}
 
 		button8_on = random.nextBoolean();
 		if(button8_on) {
-			button8.setBackgroundColor(getResources().getColor(R.color.on));				
+			button8.setBackground(getResources().getDrawable(R.drawable.shape_on));					
 		} else {
-			button8.setBackgroundColor(getResources().getColor(R.color.off));				
+			button8.setBackground(getResources().getDrawable(R.drawable.shape_off));					
 		}
 
 		
 		button9_on = random.nextBoolean();
 		if(button9_on) {
-			button9.setBackgroundColor(getResources().getColor(R.color.on));				
+			button9.setBackground(getResources().getDrawable(R.drawable.shape_on));					
 		} else {
-			button9.setBackgroundColor(getResources().getColor(R.color.off));				
+			button9.setBackground(getResources().getDrawable(R.drawable.shape_off));					
 		}
 		
 
