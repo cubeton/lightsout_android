@@ -352,7 +352,7 @@ public class MainActivity extends Activity {
 		if(button6_on) {
 			button6.setBackground(getResources().getDrawable(R.drawable.shape_on));					
 		} else {
-			button6.setBackground(getResources().getDrawable(R.drawable.shape_on));					
+			button6.setBackground(getResources().getDrawable(R.drawable.shape_off));					
 		}
 
 		

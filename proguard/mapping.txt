@@ -1433,7 +1433,8 @@ com.meghan.lightsout.MainActivity -> com.meghan.lightsout.MainActivity:
     boolean button9_on -> r
     android.widget.TextView click_text -> s
     android.widget.Chronometer time_text -> t
-    int click_count -> u
+    android.os.Vibrator haptic -> u
+    int click_count -> v
     void onCreate(android.os.Bundle) -> onCreate
     boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
     boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
