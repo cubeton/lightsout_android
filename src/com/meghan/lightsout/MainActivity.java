@@ -28,9 +28,12 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 	public Button button1, button2, button3, button4, button5, button6, button7, button8, button9;
 	public boolean button1_on, button2_on, button3_on, button4_on, button5_on, button6_on, button7_on, button8_on, button9_on;
+	public boolean buttonsEnabled;
+	public boolean gameplayOn; //True if we're playing game (i.e., not paused)
 	public TextView click_text;
 	public Chronometer time_text; 
-	public Vibrator haptic;
+	public MenuItem play, pause;
+	public long timeWhenStopped = 0; //for keeping track of the chronometer pausing and playing
 
 	public int click_count = 0;
 	
@@ -54,8 +57,7 @@ public class MainActivity extends Activity {
 		button9 = (Button) findViewById(R.id.button9);
 		click_text = (TextView) findViewById(R.id.click_text_number_id);
 		time_text = (Chronometer) findViewById(R.id.time_id_number);
-		time_text.start();
-	    haptic = (Vibrator) this.getSystemService(VIBRATOR_SERVICE);		
+		time_text.start();	
 		
 	
 		initializeButtonColors();
@@ -65,6 +67,9 @@ public class MainActivity extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.mainmenu, menu);
+		play = menu.findItem(R.id.action_play);
+		pause = menu.findItem(R.id.action_pause);
+		play.setVisible(false);
 		return true;
 	}
 	
@@ -74,13 +79,17 @@ public class MainActivity extends Activity {
 		case (R.id.action_help) :
 			Intent myIntent = new Intent(this, HelpActivity.class);
 			startActivityForResult(myIntent, 1);
-			/*Intent myIntent = new Intent(MainActivity.this, HelpActivity.class);
-			MainActivity.this.startActivity(myIntent);	*/
 			break;
 		case (R.id.action_refresh) :
 			Toast.makeText(getApplicationContext(), "Game reset",
 					   Toast.LENGTH_SHORT).show();
 			resetGame();
+			break;
+		case(R.id.action_pause) :
+			toggleGameplay(false); //Pausing game
+			break;
+		case(R.id.action_play) :
+			toggleGameplay(true); //Playing game
 			break;
 		case (android.R.id.home) :
 			Intent returnIntent = new Intent();
@@ -91,11 +100,22 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
+	
+	
 
 	@SuppressLint("NewApi")
 	public void onClick(View v) {
-		Vibrator hap = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
-		hap.vibrate(20);
+		
+		if(!gameplayOn) {
+			toggleGameplay(true); //turning game back on after it's been paused
+		}
+
+		if(!buttonsEnabled) {
+			Toast.makeText(getApplicationContext(), "Buttons disabled - reset to play again!",
+					   Toast.LENGTH_LONG).show();			
+			return;
+		}
+
 		if(v.getId() == R.id.button1) {
 			if(button1_on) { 
 				button1.setBackground(getResources().getDrawable(R.drawable.shape_off));	 button1_on = false; }
@@ -263,6 +283,7 @@ public class MainActivity extends Activity {
 		checkForWin();
 	}
 
+
 	
 	private void checkForWin() {
 		if (!(button1_on || button2_on || button3_on || button4_on || button5_on || button6_on || button7_on || button8_on || button9_on)) {
@@ -284,8 +305,7 @@ public class MainActivity extends Activity {
 					  })
 					.setNegativeButton("no I don't like fun",new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
-							// if this button is clicked, just close
-							// the dialog box and do nothing
+							disableButtons();
 							dialog.cancel();
 						}
 					});
@@ -298,6 +318,10 @@ public class MainActivity extends Activity {
 				}				
 	}
 	
+	private void disableButtons() {
+		buttonsEnabled = false;
+	}
+	
 	private void resetGame() {
 		click_count = 0;
 		click_text.setText(String.valueOf(click_count));
@@ -306,8 +330,35 @@ public class MainActivity extends Activity {
 		time_text.start();
 	}
 	
+	private void toggleGameplay(boolean turnOn) {
+		if(!turnOn) { //means we're pausing the game
+			pauseChronometer();
+			pause.setVisible(false);
+			play.setVisible(true);			
+			gameplayOn = false;
+		} else { //means we're turning the game back on
+			resumeChronometer();
+			pause.setVisible(true);
+			play.setVisible(false);			
+			gameplayOn = true;
+		}
+	}
+	
+	private void pauseChronometer() {
+		timeWhenStopped = time_text.getBase() - SystemClock.elapsedRealtime();
+		time_text.stop();
+	}
+	
+	private void resumeChronometer() {
+		time_text.setBase(SystemClock.elapsedRealtime() + timeWhenStopped);
+		time_text.start();
+		timeWhenStopped = 0;
+	}
+	
 	@SuppressLint("NewApi")
 	private void initializeButtonColors() {
+		buttonsEnabled = true;
+		gameplayOn = true;
 		Random random = new Random();
 		button1_on = random.nextBoolean();
 		if(button1_on) {
@@ -377,8 +428,6 @@ public class MainActivity extends Activity {
 		} else {
 			button9.setBackground(getResources().getDrawable(R.drawable.shape_off));					
 		}
-		
-
 	}
 	
 }

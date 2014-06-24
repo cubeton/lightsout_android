@@ -17,7 +17,7 @@ public class MenuActivity extends Activity {
 		setContentView(R.layout.main_menu);
 		ListView menuList = (ListView) findViewById(R.id.ListView_Menu);
 		String[] items = { getResources().getString(R.string.menu_item_play),
-						   getResources().getString(R.string.menu_item_help) };
+						   getResources().getString(R.string.menu_item_help)};
 		ArrayAdapter<String> adapt = new ArrayAdapter<String>(this, R.layout.menu_item, items);
 		menuList.setAdapter(adapt);
 		menuList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
