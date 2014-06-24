@@ -1,8 +1,42 @@
-<shape
+<!-- <shape
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="oval"
+    android:shape="rectangle"
     android:id="@+id/off">
-   <size android:width="10dp"
-        android:height="20dp"/>
+<corners
+	android:radius="30dp" />
+      <size 
+      android:width="50dp"
+      android:height="120dp"/>
   <gradient android:startColor="#64119C" android:endColor="#2C0645" android:angle="270"/>
-</shape>
+</shape> -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"  
+     			   android:id="@+id/off">
+    <item
+        android:left="2dp"
+        android:top="2dp">
+        <shape
+        	android:shape="rectangle"
+    		android:id="@+id/off">
+        <solid android:color="#BB000000" />
+        <corners android:radius="30dp" />
+        </shape>
+    </item>
+    <item 
+          android:bottom="2dp"        
+          android:right="2dp">
+        <shape>
+            <solid android:color="#000000" 
+                   android:shape="rectangle" />
+			<corners
+					android:radius="30dp" />
+      		<size 
+      				android:width="50dp"
+      				android:height="120dp"/>
+  			<gradient 
+  			    	android:endColor="#141413"
+  			    	android:startColor="#333330"
+  			    	android:angle="270"/>
+        </shape>
+         </item>
+</layer-list>

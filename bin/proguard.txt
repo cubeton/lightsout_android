@@ -7,14 +7,14 @@
 # view AndroidManifest.xml #generated:24
 -keep class com.meghan.lightsout.MenuActivity { <init>(...); }
 
-# onClick res/layout/buttons.xml #generated:11
-# onClick res/layout/buttons.xml #generated:18
-# onClick res/layout/buttons.xml #generated:25
-# onClick res/layout/buttons.xml #generated:35
-# onClick res/layout/buttons.xml #generated:42
+# onClick res/layout/buttons.xml #generated:12
+# onClick res/layout/buttons.xml #generated:21
+# onClick res/layout/buttons.xml #generated:29
+# onClick res/layout/buttons.xml #generated:40
 # onClick res/layout/buttons.xml #generated:48
-# onClick res/layout/buttons.xml #generated:57
-# onClick res/layout/buttons.xml #generated:64
-# onClick res/layout/buttons.xml #generated:71
+# onClick res/layout/buttons.xml #generated:55
+# onClick res/layout/buttons.xml #generated:65
+# onClick res/layout/buttons.xml #generated:73
+# onClick res/layout/buttons.xml #generated:81
 -keepclassmembers class * { *** onClick(...); }
 

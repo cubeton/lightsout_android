@@ -57941,8 +57941,8 @@ Methods (count = 9):
       [296] aload_0 v0
       [297] invokevirtual #100
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [300] ldc #2
-        + Integer [2130837512]
+      [300] ldc #1
+        + Integer [2130837511]
       [302] invokevirtual #80
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
       [305] invokevirtual #85
