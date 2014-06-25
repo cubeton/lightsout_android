@@ -1,7 +1,7 @@
 # view AndroidManifest.xml #generated:20
 -keep class com.meghan.lightsout.HelpActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:16
+# view AndroidManifest.xml #generated:15
 -keep class com.meghan.lightsout.MainActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:24

@@ -26,7 +26,7 @@
           android:bottom="2dp"        
           android:right="2dp">
         <shape>
-            <solid android:color="#000000" 
+            <solid android:color="#141413" 
                    android:shape="rectangle" />
 			<corners
 					android:radius="30dp" />
@@ -34,7 +34,7 @@
       				android:width="50dp"
       				android:height="120dp"/>
   			<gradient 
-  			    	android:endColor="#141413"
+  			    	android:endColor="#555555"
   			    	android:startColor="#333330"
   			    	android:angle="270"/>
         </shape>

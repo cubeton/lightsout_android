@@ -1431,18 +1431,27 @@ com.meghan.lightsout.MainActivity -> com.meghan.lightsout.MainActivity:
     boolean button7_on -> p
     boolean button8_on -> q
     boolean button9_on -> r
-    android.widget.TextView click_text -> s
-    android.widget.Chronometer time_text -> t
-    android.os.Vibrator haptic -> u
-    int click_count -> v
+    boolean buttonsEnabled -> s
+    boolean gameplayOn -> t
+    android.widget.TextView click_text -> u
+    android.widget.Chronometer time_text -> v
+    android.view.MenuItem play -> w
+    android.view.MenuItem pause -> x
+    long timeWhenStopped -> y
+    int click_count -> z
     void onCreate(android.os.Bundle) -> onCreate
     boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
     boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
     void onClick(android.view.View) -> onClick
     void checkForWin() -> a
-    void resetGame() -> b
-    void initializeButtonColors() -> c
+    void disableButtons() -> b
+    void resetGame() -> c
+    void toggleGameplay(boolean) -> a
+    void pauseChronometer() -> d
+    void resumeChronometer() -> e
+    void initializeButtonColors() -> f
     void access$0(com.meghan.lightsout.MainActivity) -> a
+    void access$1(com.meghan.lightsout.MainActivity) -> b
 com.meghan.lightsout.MainActivity$1 -> com.meghan.lightsout.a:
     com.meghan.lightsout.MainActivity this$0 -> a
     void onClick(android.content.DialogInterface,int) -> onClick

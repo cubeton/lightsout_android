@@ -89,6 +89,8 @@ com.meghan.lightsout.R$drawable: int background_help
 com.meghan.lightsout.R$drawable: int game_background
 com.meghan.lightsout.R$drawable: int help_background
 com.meghan.lightsout.R$drawable: int ic_action_help
+com.meghan.lightsout.R$drawable: int ic_action_pause
+com.meghan.lightsout.R$drawable: int ic_action_play
 com.meghan.lightsout.R$drawable: int ic_action_refresh
 com.meghan.lightsout.R$drawable: int ic_launcher
 com.meghan.lightsout.R$drawable: int shape_off
@@ -98,8 +100,9 @@ com.meghan.lightsout.R$id: int RelativeLayout02
 com.meghan.lightsout.R$id: int TableLayout01
 com.meghan.lightsout.R$id: int TableRow01
 com.meghan.lightsout.R$id: int action_help
+com.meghan.lightsout.R$id: int action_pause
+com.meghan.lightsout.R$id: int action_play
 com.meghan.lightsout.R$id: int action_refresh
-com.meghan.lightsout.R$id: int action_settings
 com.meghan.lightsout.R$id: int button1
 com.meghan.lightsout.R$id: int button2
 com.meghan.lightsout.R$id: int button3

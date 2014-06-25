@@ -55576,9 +55576,9 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 303):
-  + Integer [2130837511]
-  + Integer [2130837512]
+Constant Pool (count = 328):
+  + Integer [2130837513]
+  + Integer [2130837514]
   + Integer [2130903041]
   + Integer [2131230720]
   + Integer [2131296258]
@@ -55592,12 +55592,14 @@ Constant Pool (count = 303):
   + Integer [2131296266]
   + Integer [2131296268]
   + Integer [2131296270]
+  + Integer [2131296279]
+  + Integer [2131296280]
+  + String [Buttons disabled - reset to play again!]
   + String [Game reset]
   + String [Play again?]
   + String [YOU WON!]
   + String [Yes yes yes RIGHT NOW!]
   + String [no I don't like fun]
-  + String [vibrator]
   + Class [android/app/ActionBar]
   + Class [android/app/Activity]
   + Class [android/app/AlertDialog]
@@ -55605,7 +55607,7 @@ Constant Pool (count = 303):
   + Class [android/content/Intent]
   + Class [android/content/res/Resources]
   + Class [android/os/SystemClock]
-  + Class [android/os/Vibrator]
+  + Class [android/view/Menu]
   + Class [android/view/MenuInflater]
   + Class [android/view/MenuItem]
   + Class [android/view/View]
@@ -55619,7 +55621,6 @@ Constant Pool (count = 303):
   + Class [com/meghan/lightsout/b]
   + Class [java/lang/String]
   + Class [java/util/Random]
-  + Long [20]
   + Fieldref [com/meghan/lightsout/MainActivity.a Landroid/widget/Button;]
   + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
   + Fieldref [com/meghan/lightsout/MainActivity.c Landroid/widget/Button;]
@@ -55638,10 +55639,14 @@ Constant Pool (count = 303):
   + Fieldref [com/meghan/lightsout/MainActivity.p Z]
   + Fieldref [com/meghan/lightsout/MainActivity.q Z]
   + Fieldref [com/meghan/lightsout/MainActivity.r Z]
-  + Fieldref [com/meghan/lightsout/MainActivity.s Landroid/widget/TextView;]
-  + Fieldref [com/meghan/lightsout/MainActivity.t Landroid/widget/Chronometer;]
-  + Fieldref [com/meghan/lightsout/MainActivity.u Landroid/os/Vibrator;]
-  + Fieldref [com/meghan/lightsout/MainActivity.v I]
+  + Fieldref [com/meghan/lightsout/MainActivity.s Z]
+  + Fieldref [com/meghan/lightsout/MainActivity.t Z]
+  + Fieldref [com/meghan/lightsout/MainActivity.u Landroid/widget/TextView;]
+  + Fieldref [com/meghan/lightsout/MainActivity.v Landroid/widget/Chronometer;]
+  + Fieldref [com/meghan/lightsout/MainActivity.w Landroid/view/MenuItem;]
+  + Fieldref [com/meghan/lightsout/MainActivity.x Landroid/view/MenuItem;]
+  + Fieldref [com/meghan/lightsout/MainActivity.y J]
+  + Fieldref [com/meghan/lightsout/MainActivity.z I]
   + Methodref [android/app/ActionBar.setDisplayHomeAsUpEnabled (Z)V]
   + Methodref [android/app/Activity.<init> ()V]
   + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
@@ -55657,10 +55662,10 @@ Constant Pool (count = 303):
   + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
   + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
   + Methodref [android/os/SystemClock.elapsedRealtime ()J]
-  + Methodref [android/os/Vibrator.vibrate (J)V]
   + Methodref [android/view/MenuInflater.inflate (ILandroid/view/Menu;)V]
   + Methodref [android/view/View.getId ()I]
   + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+  + Methodref [android/widget/Chronometer.getBase ()J]
   + Methodref [android/widget/Chronometer.setBase (J)V]
   + Methodref [android/widget/Chronometer.start ()V]
   + Methodref [android/widget/Chronometer.stop ()V]
@@ -55668,15 +55673,18 @@ Constant Pool (count = 303):
   + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
   + Methodref [android/widget/Toast.show ()V]
   + Methodref [com/meghan/lightsout/MainActivity.a ()V]
+  + Methodref [com/meghan/lightsout/MainActivity.a (Z)V]
   + Methodref [com/meghan/lightsout/MainActivity.b ()V]
   + Methodref [com/meghan/lightsout/MainActivity.c ()V]
+  + Methodref [com/meghan/lightsout/MainActivity.d ()V]
+  + Methodref [com/meghan/lightsout/MainActivity.e ()V]
+  + Methodref [com/meghan/lightsout/MainActivity.f ()V]
   + Methodref [com/meghan/lightsout/MainActivity.findViewById (I)Landroid/view/View;]
   + Methodref [com/meghan/lightsout/MainActivity.finish ()V]
   + Methodref [com/meghan/lightsout/MainActivity.getActionBar ()Landroid/app/ActionBar;]
   + Methodref [com/meghan/lightsout/MainActivity.getApplicationContext ()Landroid/content/Context;]
   + Methodref [com/meghan/lightsout/MainActivity.getMenuInflater ()Landroid/view/MenuInflater;]
   + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-  + Methodref [com/meghan/lightsout/MainActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
   + Methodref [com/meghan/lightsout/MainActivity.setContentView (I)V]
   + Methodref [com/meghan/lightsout/MainActivity.setResult (ILandroid/content/Intent;)V]
   + Methodref [com/meghan/lightsout/MainActivity.startActivityForResult (Landroid/content/Intent;I)V]
@@ -55685,33 +55693,40 @@ Constant Pool (count = 303):
   + Methodref [java/lang/String.valueOf (I)Ljava/lang/String;]
   + Methodref [java/util/Random.<init> ()V]
   + Methodref [java/util/Random.nextBoolean ()Z]
+  + InterfaceMethodref [android/view/Menu.findItem (I)Landroid/view/MenuItem;]
   + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
+  + InterfaceMethodref [android/view/MenuItem.setVisible (Z)Landroid/view/MenuItem;]
   + NameAndType [<init> ()V]
   + NameAndType [<init> (Landroid/content/Context;)V]
   + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
   + NameAndType [<init> (Lcom/meghan/lightsout/MainActivity;)V]
   + NameAndType [a ()V]
+  + NameAndType [a (Z)V]
   + NameAndType [a Landroid/widget/Button;]
   + NameAndType [b ()V]
   + NameAndType [b Landroid/widget/Button;]
   + NameAndType [c ()V]
   + NameAndType [c Landroid/widget/Button;]
   + NameAndType [create ()Landroid/app/AlertDialog;]
+  + NameAndType [d ()V]
   + NameAndType [d Landroid/widget/Button;]
+  + NameAndType [e ()V]
   + NameAndType [e Landroid/widget/Button;]
   + NameAndType [elapsedRealtime ()J]
+  + NameAndType [f ()V]
   + NameAndType [f Landroid/widget/Button;]
+  + NameAndType [findItem (I)Landroid/view/MenuItem;]
   + NameAndType [findViewById (I)Landroid/view/View;]
   + NameAndType [finish ()V]
   + NameAndType [g Landroid/widget/Button;]
   + NameAndType [getActionBar ()Landroid/app/ActionBar;]
   + NameAndType [getApplicationContext ()Landroid/content/Context;]
+  + NameAndType [getBase ()J]
   + NameAndType [getDrawable (I)Landroid/graphics/drawable/Drawable;]
   + NameAndType [getId ()I]
   + NameAndType [getItemId ()I]
   + NameAndType [getMenuInflater ()Landroid/view/MenuInflater;]
   + NameAndType [getResources ()Landroid/content/res/Resources;]
-  + NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
   + NameAndType [h Landroid/widget/Button;]
   + NameAndType [i Landroid/widget/Button;]
   + NameAndType [inflate (ILandroid/view/Menu;)V]
@@ -55727,7 +55742,7 @@ Constant Pool (count = 303):
   + NameAndType [p Z]
   + NameAndType [q Z]
   + NameAndType [r Z]
-  + NameAndType [s Landroid/widget/TextView;]
+  + NameAndType [s Z]
   + NameAndType [setBackground (Landroid/graphics/drawable/Drawable;)V]
   + NameAndType [setBase (J)V]
   + NameAndType [setCancelable (Z)Landroid/app/AlertDialog$Builder;]
@@ -55739,15 +55754,19 @@ Constant Pool (count = 303):
   + NameAndType [setResult (ILandroid/content/Intent;)V]
   + NameAndType [setText (Ljava/lang/CharSequence;)V]
   + NameAndType [setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setVisible (Z)Landroid/view/MenuItem;]
   + NameAndType [show ()V]
   + NameAndType [start ()V]
   + NameAndType [startActivityForResult (Landroid/content/Intent;I)V]
   + NameAndType [stop ()V]
-  + NameAndType [t Landroid/widget/Chronometer;]
-  + NameAndType [u Landroid/os/Vibrator;]
-  + NameAndType [v I]
+  + NameAndType [t Z]
+  + NameAndType [u Landroid/widget/TextView;]
+  + NameAndType [v Landroid/widget/Chronometer;]
   + NameAndType [valueOf (I)Ljava/lang/String;]
-  + NameAndType [vibrate (J)V]
+  + NameAndType [w Landroid/view/MenuItem;]
+  + NameAndType [x Landroid/view/MenuItem;]
+  + NameAndType [y J]
+  + NameAndType [z I]
   + Utf8 [()I]
   + Utf8 [()J]
   + Utf8 [()Landroid/app/ActionBar;]
@@ -55758,6 +55777,7 @@ Constant Pool (count = 303):
   + Utf8 [()V]
   + Utf8 [()Z]
   + Utf8 [(I)Landroid/graphics/drawable/Drawable;]
+  + Utf8 [(I)Landroid/view/MenuItem;]
   + Utf8 [(I)Landroid/view/View;]
   + Utf8 [(I)Ljava/lang/String;]
   + Utf8 [(I)V]
@@ -55777,15 +55797,17 @@ Constant Pool (count = 303):
   + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
   + Utf8 [(Ljava/lang/CharSequence;)V]
   + Utf8 [(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
-  + Utf8 [(Ljava/lang/String;)Ljava/lang/Object;]
   + Utf8 [(Z)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Z)Landroid/view/MenuItem;]
   + Utf8 [(Z)V]
   + Utf8 [<init>]
+  + Utf8 [Buttons disabled - reset to play again!]
   + Utf8 [Code]
   + Utf8 [Game reset]
   + Utf8 [I]
+  + Utf8 [J]
   + Utf8 [Landroid/annotation/SuppressLint;]
-  + Utf8 [Landroid/os/Vibrator;]
+  + Utf8 [Landroid/view/MenuItem;]
   + Utf8 [Landroid/widget/Button;]
   + Utf8 [Landroid/widget/Chronometer;]
   + Utf8 [Landroid/widget/TextView;]
@@ -55804,7 +55826,7 @@ Constant Pool (count = 303):
   + Utf8 [android/content/Intent]
   + Utf8 [android/content/res/Resources]
   + Utf8 [android/os/SystemClock]
-  + Utf8 [android/os/Vibrator]
+  + Utf8 [android/view/Menu]
   + Utf8 [android/view/MenuInflater]
   + Utf8 [android/view/MenuItem]
   + Utf8 [android/view/View]
@@ -55823,17 +55845,18 @@ Constant Pool (count = 303):
   + Utf8 [e]
   + Utf8 [elapsedRealtime]
   + Utf8 [f]
+  + Utf8 [findItem]
   + Utf8 [findViewById]
   + Utf8 [finish]
   + Utf8 [g]
   + Utf8 [getActionBar]
   + Utf8 [getApplicationContext]
+  + Utf8 [getBase]
   + Utf8 [getDrawable]
   + Utf8 [getId]
   + Utf8 [getItemId]
   + Utf8 [getMenuInflater]
   + Utf8 [getResources]
-  + Utf8 [getSystemService]
   + Utf8 [h]
   + Utf8 [i]
   + Utf8 [inflate]
@@ -55867,6 +55890,7 @@ Constant Pool (count = 303):
   + Utf8 [setResult]
   + Utf8 [setText]
   + Utf8 [setTitle]
+  + Utf8 [setVisible]
   + Utf8 [show]
   + Utf8 [start]
   + Utf8 [startActivityForResult]
@@ -55876,10 +55900,12 @@ Constant Pool (count = 303):
   + Utf8 [v]
   + Utf8 [value]
   + Utf8 [valueOf]
-  + Utf8 [vibrate]
-  + Utf8 [vibrator]
+  + Utf8 [w]
+  + Utf8 [x]
+  + Utf8 [y]
+  + Utf8 [z]
 
-Fields (count = 22):
+Fields (count = 26):
   + Field:        a Landroid/widget/Button;
     Access flags: 0x1
       = public android.widget.Button a
@@ -55934,64 +55960,80 @@ Fields (count = 22):
   + Field:        r Z
     Access flags: 0x1
       = public boolean r
-  + Field:        s Landroid/widget/TextView;
+  + Field:        s Z
     Access flags: 0x1
-      = public android.widget.TextView s
-  + Field:        t Landroid/widget/Chronometer;
+      = public boolean s
+  + Field:        t Z
     Access flags: 0x1
-      = public android.widget.Chronometer t
-  + Field:        u Landroid/os/Vibrator;
+      = public boolean t
+  + Field:        u Landroid/widget/TextView;
     Access flags: 0x1
-      = public android.os.Vibrator u
-  + Field:        v I
+      = public android.widget.TextView u
+  + Field:        v Landroid/widget/Chronometer;
     Access flags: 0x1
-      = public int v
+      = public android.widget.Chronometer v
+  + Field:        w Landroid/view/MenuItem;
+    Access flags: 0x1
+      = public android.view.MenuItem w
+  + Field:        x Landroid/view/MenuItem;
+    Access flags: 0x1
+      = public android.view.MenuItem x
+  + Field:        y J
+    Access flags: 0x1
+      = public long y
+  + Field:        z I
+    Access flags: 0x1
+      = public int z
 
-Methods (count = 9):
+Methods (count = 14):
   - Method:       <init>()V
     Access flags: 0x1
       = public MainActivity()
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 10, locals = 1, stack = 2):
+    + Code attribute instructions (code length = 15, locals = 1, stack = 3):
       [0] aload_0 v0
-      [1] invokespecial #68
+      [1] invokespecial #72
         + Methodref [android/app/Activity.<init> ()V]
       [4] aload_0 v0
-      [5] iconst_0
-      [6] putfield #66
-        + Fieldref [com/meghan/lightsout/MainActivity.v I]
-      [9] return
+      [5] lconst_0
+      [6] putfield #69
+        + Fieldref [com/meghan/lightsout/MainActivity.y J]
+      [9] aload_0 v0
+      [10] iconst_0
+      [11] putfield #70
+        + Fieldref [com/meghan/lightsout/MainActivity.z I]
+      [14] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
   + Method:       onCreate(Landroid/os/Bundle;)V
     Access flags: 0x4
       = protected void onCreate(android.os.Bundle)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 189, locals = 3, stack = 3):
+    + Code attribute instructions (code length = 176, locals = 3, stack = 3):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] invokespecial #69
+      [2] invokespecial #73
         + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
       [5] aload_0 v0
       [6] ldc #3
         + Integer [2130903041]
-      [8] invokevirtual #102
+      [8] invokevirtual #109
         + Methodref [com/meghan/lightsout/MainActivity.setContentView (I)V]
       [11] aload_0 v0
-      [12] invokevirtual #97
+      [12] invokevirtual #105
         + Methodref [com/meghan/lightsout/MainActivity.getActionBar ()Landroid/app/ActionBar;]
       [15] astore_2 v2
       [16] aload_2 v2
       [17] iconst_1
-      [18] invokevirtual #67
+      [18] invokevirtual #71
         + Methodref [android/app/ActionBar.setDisplayHomeAsUpEnabled (Z)V]
       [21] aload_0 v0
       [22] aload_0 v0
       [23] ldc #5
         + Integer [2131296258]
-      [25] invokevirtual #95
+      [25] invokevirtual #103
         + Methodref [com/meghan/lightsout/MainActivity.findViewById (I)Landroid/view/View;]
-      [28] checkcast #33
+      [28] checkcast #35
         + Class [android/widget/Button]
       [31] putfield #45
         + Fieldref [com/meghan/lightsout/MainActivity.a Landroid/widget/Button;]
@@ -55999,9 +56041,9 @@ Methods (count = 9):
       [35] aload_0 v0
       [36] ldc #6
         + Integer [2131296259]
-      [38] invokevirtual #95
+      [38] invokevirtual #103
         + Methodref [com/meghan/lightsout/MainActivity.findViewById (I)Landroid/view/View;]
-      [41] checkcast #33
+      [41] checkcast #35
         + Class [android/widget/Button]
       [44] putfield #46
         + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
@@ -56009,9 +56051,9 @@ Methods (count = 9):
       [48] aload_0 v0
       [49] ldc #7
         + Integer [2131296260]
-      [51] invokevirtual #95
+      [51] invokevirtual #103
         + Methodref [com/meghan/lightsout/MainActivity.findViewById (I)Landroid/view/View;]
-      [54] checkcast #33
+      [54] checkcast #35
         + Class [android/widget/Button]
       [57] putfield #47
         + Fieldref [com/meghan/lightsout/MainActivity.c Landroid/widget/Button;]
@@ -56019,9 +56061,9 @@ Methods (count = 9):
       [61] aload_0 v0
       [62] ldc #8
         + Integer [2131296261]
-      [64] invokevirtual #95
+      [64] invokevirtual #103
         + Methodref [com/meghan/lightsout/MainActivity.findViewById (I)Landroid/view/View;]
-      [67] checkcast #33
+      [67] checkcast #35
         + Class [android/widget/Button]
       [70] putfield #48
         + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
@@ -56029,9 +56071,9 @@ Methods (count = 9):
       [74] aload_0 v0
       [75] ldc #9
         + Integer [2131296262]
-      [77] invokevirtual #95
+      [77] invokevirtual #103
         + Methodref [com/meghan/lightsout/MainActivity.findViewById (I)Landroid/view/View;]
-      [80] checkcast #33
+      [80] checkcast #35
         + Class [android/widget/Button]
       [83] putfield #49
         + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
@@ -56039,9 +56081,9 @@ Methods (count = 9):
       [87] aload_0 v0
       [88] ldc #10
         + Integer [2131296263]
-      [90] invokevirtual #95
+      [90] invokevirtual #103
         + Methodref [com/meghan/lightsout/MainActivity.findViewById (I)Landroid/view/View;]
-      [93] checkcast #33
+      [93] checkcast #35
         + Class [android/widget/Button]
       [96] putfield #50
         + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
@@ -56049,9 +56091,9 @@ Methods (count = 9):
       [100] aload_0 v0
       [101] ldc #11
         + Integer [2131296264]
-      [103] invokevirtual #95
+      [103] invokevirtual #103
         + Methodref [com/meghan/lightsout/MainActivity.findViewById (I)Landroid/view/View;]
-      [106] checkcast #33
+      [106] checkcast #35
         + Class [android/widget/Button]
       [109] putfield #51
         + Fieldref [com/meghan/lightsout/MainActivity.g Landroid/widget/Button;]
@@ -56059,9 +56101,9 @@ Methods (count = 9):
       [113] aload_0 v0
       [114] ldc #12
         + Integer [2131296265]
-      [116] invokevirtual #95
+      [116] invokevirtual #103
         + Methodref [com/meghan/lightsout/MainActivity.findViewById (I)Landroid/view/View;]
-      [119] checkcast #33
+      [119] checkcast #35
         + Class [android/widget/Button]
       [122] putfield #52
         + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
@@ -56069,9 +56111,9 @@ Methods (count = 9):
       [126] aload_0 v0
       [127] ldc #13
         + Integer [2131296266]
-      [129] invokevirtual #95
+      [129] invokevirtual #103
         + Methodref [com/meghan/lightsout/MainActivity.findViewById (I)Landroid/view/View;]
-      [132] checkcast #33
+      [132] checkcast #35
         + Class [android/widget/Button]
       [135] putfield #53
         + Fieldref [com/meghan/lightsout/MainActivity.i Landroid/widget/Button;]
@@ -56079,1511 +56121,1550 @@ Methods (count = 9):
       [139] aload_0 v0
       [140] ldc #14
         + Integer [2131296268]
-      [142] invokevirtual #95
+      [142] invokevirtual #103
         + Methodref [com/meghan/lightsout/MainActivity.findViewById (I)Landroid/view/View;]
-      [145] checkcast #35
+      [145] checkcast #37
         + Class [android/widget/TextView]
-      [148] putfield #63
-        + Fieldref [com/meghan/lightsout/MainActivity.s Landroid/widget/TextView;]
+      [148] putfield #65
+        + Fieldref [com/meghan/lightsout/MainActivity.u Landroid/widget/TextView;]
       [151] aload_0 v0
       [152] aload_0 v0
       [153] ldc #15
         + Integer [2131296270]
-      [155] invokevirtual #95
+      [155] invokevirtual #103
         + Methodref [com/meghan/lightsout/MainActivity.findViewById (I)Landroid/view/View;]
-      [158] checkcast #34
+      [158] checkcast #36
         + Class [android/widget/Chronometer]
-      [161] putfield #64
-        + Fieldref [com/meghan/lightsout/MainActivity.t Landroid/widget/Chronometer;]
+      [161] putfield #66
+        + Fieldref [com/meghan/lightsout/MainActivity.v Landroid/widget/Chronometer;]
       [164] aload_0 v0
-      [165] getfield #64
-        + Fieldref [com/meghan/lightsout/MainActivity.t Landroid/widget/Chronometer;]
-      [168] invokevirtual #87
+      [165] getfield #66
+        + Fieldref [com/meghan/lightsout/MainActivity.v Landroid/widget/Chronometer;]
+      [168] invokevirtual #91
         + Methodref [android/widget/Chronometer.start ()V]
       [171] aload_0 v0
-      [172] aload_0 v0
-      [173] ldc #21
-        + String [vibrator]
-      [175] invokevirtual #101
-        + Methodref [com/meghan/lightsout/MainActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
-      [178] checkcast #29
-        + Class [android/os/Vibrator]
-      [181] putfield #65
-        + Fieldref [com/meghan/lightsout/MainActivity.u Landroid/os/Vibrator;]
-      [184] aload_0 v0
-      [185] invokespecial #94
-        + Methodref [com/meghan/lightsout/MainActivity.c ()V]
-      [188] return
+      [172] invokespecial #102
+        + Methodref [com/meghan/lightsout/MainActivity.f ()V]
+      [175] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
   + Method:       onCreateOptionsMenu(Landroid/view/Menu;)Z
     Access flags: 0x1
       = public boolean onCreateOptionsMenu(android.view.Menu)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 14, locals = 3, stack = 3):
+    + Code attribute instructions (code length = 49, locals = 3, stack = 3):
       [0] aload_0 v0
-      [1] invokevirtual #99
+      [1] invokevirtual #107
         + Methodref [com/meghan/lightsout/MainActivity.getMenuInflater ()Landroid/view/MenuInflater;]
       [4] astore_2 v2
       [5] aload_2 v2
       [6] ldc #4
         + Integer [2131230720]
       [8] aload_1 v1
-      [9] invokevirtual #83
+      [9] invokevirtual #86
         + Methodref [android/view/MenuInflater.inflate (ILandroid/view/Menu;)V]
-      [12] iconst_1
-      [13] ireturn
+      [12] aload_0 v0
+      [13] aload_1 v1
+      [14] ldc #17
+        + Integer [2131296280]
+      [16] invokeinterface #117
+        + InterfaceMethodref [android/view/Menu.findItem (I)Landroid/view/MenuItem;]
+      [21] putfield #67
+        + Fieldref [com/meghan/lightsout/MainActivity.w Landroid/view/MenuItem;]
+      [24] aload_0 v0
+      [25] aload_1 v1
+      [26] ldc #16
+        + Integer [2131296279]
+      [28] invokeinterface #117
+        + InterfaceMethodref [android/view/Menu.findItem (I)Landroid/view/MenuItem;]
+      [33] putfield #68
+        + Fieldref [com/meghan/lightsout/MainActivity.x Landroid/view/MenuItem;]
+      [36] aload_0 v0
+      [37] getfield #67
+        + Fieldref [com/meghan/lightsout/MainActivity.w Landroid/view/MenuItem;]
+      [40] iconst_0
+      [41] invokeinterface #119
+        + InterfaceMethodref [android/view/MenuItem.setVisible (Z)Landroid/view/MenuItem;]
+      [46] pop
+      [47] iconst_1
+      [48] ireturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
   + Method:       onOptionsItemSelected(Landroid/view/MenuItem;)Z
     Access flags: 0x1
       = public boolean onOptionsItemSelected(android.view.MenuItem)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 100, locals = 4, stack = 4):
+    + Code attribute instructions (code length = 132, locals = 4, stack = 4):
       [0] aload_1 v1
-      [1] invokeinterface #110
+      [1] invokeinterface #118
         + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
-      [6] lookupswitch (3 offsets, default=92) (target=98)
-        16908332: offset = 74, target = 80
-        2131296279: offset = 34, target = 40
-        2131296280: offset = 54, target = 60
-        default: offset = 92, target = 98
-      [40] new #26
+      [6] lookupswitch (5 offsets, default=124) (target=130)
+        16908332: offset = 106, target = 112
+        2131296279: offset = 90, target = 96
+        2131296280: offset = 98, target = 104
+        2131296281: offset = 70, target = 76
+        2131296282: offset = 50, target = 56
+        default: offset = 124, target = 130
+      [56] new #28
         + Class [android/content/Intent]
-      [43] dup
-      [44] aload_0 v0
-      [45] ldc #37
-        + Class [com/meghan/lightsout/HelpActivity]
-      [47] invokespecial #79
-        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
-      [50] astore_2 v2
-      [51] aload_0 v0
-      [52] aload_2 v2
-      [53] iconst_1
-      [54] invokevirtual #104
-        + Methodref [com/meghan/lightsout/MainActivity.startActivityForResult (Landroid/content/Intent;I)V]
-      [57] goto +41 (target=98)
+      [59] dup
       [60] aload_0 v0
-      [61] invokevirtual #98
+      [61] ldc #39
+        + Class [com/meghan/lightsout/HelpActivity]
+      [63] invokespecial #83
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [66] astore_2 v2
+      [67] aload_0 v0
+      [68] aload_2 v2
+      [69] iconst_1
+      [70] invokevirtual #111
+        + Methodref [com/meghan/lightsout/MainActivity.startActivityForResult (Landroid/content/Intent;I)V]
+      [73] goto +57 (target=130)
+      [76] aload_0 v0
+      [77] invokevirtual #106
         + Methodref [com/meghan/lightsout/MainActivity.getApplicationContext ()Landroid/content/Context;]
-      [64] ldc #16
+      [80] ldc #19
         + String [Game reset]
-      [66] iconst_0
-      [67] invokestatic #90
+      [82] iconst_0
+      [83] invokestatic #94
         + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
-      [70] invokevirtual #91
+      [86] invokevirtual #95
         + Methodref [android/widget/Toast.show ()V]
-      [73] aload_0 v0
-      [74] invokespecial #93
-        + Methodref [com/meghan/lightsout/MainActivity.b ()V]
-      [77] goto +21 (target=98)
-      [80] new #26
+      [89] aload_0 v0
+      [90] invokespecial #99
+        + Methodref [com/meghan/lightsout/MainActivity.c ()V]
+      [93] goto +37 (target=130)
+      [96] aload_0 v0
+      [97] iconst_0
+      [98] invokespecial #97
+        + Methodref [com/meghan/lightsout/MainActivity.a (Z)V]
+      [101] goto +29 (target=130)
+      [104] aload_0 v0
+      [105] iconst_1
+      [106] invokespecial #97
+        + Methodref [com/meghan/lightsout/MainActivity.a (Z)V]
+      [109] goto +21 (target=130)
+      [112] new #28
         + Class [android/content/Intent]
-      [83] dup
-      [84] invokespecial #78
+      [115] dup
+      [116] invokespecial #82
         + Methodref [android/content/Intent.<init> ()V]
-      [87] astore_3 v3
-      [88] aload_0 v0
-      [89] iconst_m1
-      [90] aload_3 v3
-      [91] invokevirtual #103
+      [119] astore_3 v3
+      [120] aload_0 v0
+      [121] iconst_m1
+      [122] aload_3 v3
+      [123] invokevirtual #110
         + Methodref [com/meghan/lightsout/MainActivity.setResult (ILandroid/content/Intent;)V]
-      [94] aload_0 v0
-      [95] invokevirtual #96
+      [126] aload_0 v0
+      [127] invokevirtual #104
         + Methodref [com/meghan/lightsout/MainActivity.finish ()V]
-      [98] iconst_1
-      [99] ireturn
+      [130] iconst_1
+      [131] ireturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 4):
-        - [40] Var: ..., Stack: (empty)
-        - [60] Var: ..., Stack: (empty)
-        - [80] Var: ..., Stack: (empty)
-        - [98] Var: ..., Stack: (empty)
+      + Stack map table attribute (count = 6):
+        - [56] Var: ..., Stack: (empty)
+        - [76] Var: ..., Stack: (empty)
+        - [96] Var: ..., Stack: (empty)
+        - [104] Var: ..., Stack: (empty)
+        - [112] Var: ..., Stack: (empty)
+        - [130] Var: ..., Stack: (empty)
   + Method:       onClick(Landroid/view/View;)V
     Access flags: 0x1
       = public void onClick(android.view.View)
     Class member attributes (count = 2):
-    + Code attribute instructions (code length = 1843, locals = 3, stack = 3):
+    + Code attribute instructions (code length = 1859, locals = 2, stack = 3):
       [0] aload_0 v0
-      [1] ldc #21
-        + String [vibrator]
-      [3] invokevirtual #101
-        + Methodref [com/meghan/lightsout/MainActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
-      [6] checkcast #29
-        + Class [android/os/Vibrator]
-      [9] astore_2 v2
-      [10] aload_2 v2
-      [11] ldc2_w #43
-        + Long [20]
-      [14] invokevirtual #82
-        + Methodref [android/os/Vibrator.vibrate (J)V]
-      [17] aload_1 v1
-      [18] invokevirtual #84
+      [1] getfield #64
+        + Fieldref [com/meghan/lightsout/MainActivity.t Z]
+      [4] ifne +8 (target=12)
+      [7] aload_0 v0
+      [8] iconst_1
+      [9] invokespecial #97
+        + Methodref [com/meghan/lightsout/MainActivity.a (Z)V]
+      [12] aload_0 v0
+      [13] getfield #63
+        + Fieldref [com/meghan/lightsout/MainActivity.s Z]
+      [16] ifne +17 (target=33)
+      [19] aload_0 v0
+      [20] invokevirtual #106
+        + Methodref [com/meghan/lightsout/MainActivity.getApplicationContext ()Landroid/content/Context;]
+      [23] ldc #18
+        + String [Buttons disabled - reset to play again!]
+      [25] iconst_1
+      [26] invokestatic #94
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
+      [29] invokevirtual #95
+        + Methodref [android/widget/Toast.show ()V]
+      [32] return
+      [33] aload_1 v1
+      [34] invokevirtual #87
         + Methodref [android/view/View.getId ()I]
-      [21] ldc #5
+      [37] ldc #5
         + Integer [2131296258]
-      [23] ificmpne +211 (target=234)
-      [26] aload_0 v0
-      [27] getfield #54
+      [39] ificmpne +211 (target=250)
+      [42] aload_0 v0
+      [43] getfield #54
         + Fieldref [com/meghan/lightsout/MainActivity.j Z]
-      [30] ifeq +27 (target=57)
-      [33] aload_0 v0
-      [34] getfield #45
-        + Fieldref [com/meghan/lightsout/MainActivity.a Landroid/widget/Button;]
-      [37] aload_0 v0
-      [38] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [41] ldc #1
-        + Integer [2130837511]
-      [43] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [46] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [46] ifeq +27 (target=73)
       [49] aload_0 v0
-      [50] iconst_0
-      [51] putfield #54
-        + Fieldref [com/meghan/lightsout/MainActivity.j Z]
-      [54] goto +24 (target=78)
-      [57] aload_0 v0
-      [58] getfield #45
+      [50] getfield #45
         + Fieldref [com/meghan/lightsout/MainActivity.a Landroid/widget/Button;]
-      [61] aload_0 v0
-      [62] invokevirtual #100
+      [53] aload_0 v0
+      [54] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [65] ldc #2
-        + Integer [2130837512]
-      [67] invokevirtual #80
+      [57] ldc #1
+        + Integer [2130837513]
+      [59] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [70] invokevirtual #85
+      [62] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [65] aload_0 v0
+      [66] iconst_0
+      [67] putfield #54
+        + Fieldref [com/meghan/lightsout/MainActivity.j Z]
+      [70] goto +24 (target=94)
       [73] aload_0 v0
-      [74] iconst_1
-      [75] putfield #54
-        + Fieldref [com/meghan/lightsout/MainActivity.j Z]
-      [78] aload_0 v0
-      [79] getfield #55
-        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
-      [82] ifeq +27 (target=109)
-      [85] aload_0 v0
-      [86] getfield #46
-        + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
+      [74] getfield #45
+        + Fieldref [com/meghan/lightsout/MainActivity.a Landroid/widget/Button;]
+      [77] aload_0 v0
+      [78] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [81] ldc #2
+        + Integer [2130837514]
+      [83] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [86] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [89] aload_0 v0
-      [90] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [93] ldc #1
-        + Integer [2130837511]
-      [95] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [98] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [90] iconst_1
+      [91] putfield #54
+        + Fieldref [com/meghan/lightsout/MainActivity.j Z]
+      [94] aload_0 v0
+      [95] getfield #55
+        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
+      [98] ifeq +27 (target=125)
       [101] aload_0 v0
-      [102] iconst_0
-      [103] putfield #55
-        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
-      [106] goto +24 (target=130)
-      [109] aload_0 v0
-      [110] getfield #46
+      [102] getfield #46
         + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
-      [113] aload_0 v0
-      [114] invokevirtual #100
+      [105] aload_0 v0
+      [106] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [117] ldc #2
-        + Integer [2130837512]
-      [119] invokevirtual #80
+      [109] ldc #1
+        + Integer [2130837513]
+      [111] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [122] invokevirtual #85
+      [114] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [117] aload_0 v0
+      [118] iconst_0
+      [119] putfield #55
+        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
+      [122] goto +24 (target=146)
       [125] aload_0 v0
-      [126] iconst_1
-      [127] putfield #55
-        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
-      [130] aload_0 v0
-      [131] getfield #57
-        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
-      [134] ifeq +27 (target=161)
-      [137] aload_0 v0
-      [138] getfield #48
-        + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
+      [126] getfield #46
+        + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
+      [129] aload_0 v0
+      [130] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [133] ldc #2
+        + Integer [2130837514]
+      [135] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [138] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [141] aload_0 v0
-      [142] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [145] ldc #1
-        + Integer [2130837511]
-      [147] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [150] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [142] iconst_1
+      [143] putfield #55
+        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
+      [146] aload_0 v0
+      [147] getfield #57
+        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
+      [150] ifeq +27 (target=177)
       [153] aload_0 v0
-      [154] iconst_0
-      [155] putfield #57
-        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
-      [158] goto +24 (target=182)
-      [161] aload_0 v0
-      [162] getfield #48
+      [154] getfield #48
         + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
-      [165] aload_0 v0
-      [166] invokevirtual #100
+      [157] aload_0 v0
+      [158] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [169] ldc #2
-        + Integer [2130837512]
-      [171] invokevirtual #80
+      [161] ldc #1
+        + Integer [2130837513]
+      [163] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [174] invokevirtual #85
+      [166] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [169] aload_0 v0
+      [170] iconst_0
+      [171] putfield #57
+        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
+      [174] goto +24 (target=198)
       [177] aload_0 v0
-      [178] iconst_1
-      [179] putfield #57
-        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
-      [182] aload_0 v0
-      [183] getfield #58
-        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [186] ifeq +27 (target=213)
-      [189] aload_0 v0
-      [190] getfield #49
-        + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
+      [178] getfield #48
+        + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
+      [181] aload_0 v0
+      [182] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [185] ldc #2
+        + Integer [2130837514]
+      [187] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [190] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [193] aload_0 v0
-      [194] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [197] ldc #1
-        + Integer [2130837511]
-      [199] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [202] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [194] iconst_1
+      [195] putfield #57
+        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
+      [198] aload_0 v0
+      [199] getfield #58
+        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
+      [202] ifeq +27 (target=229)
       [205] aload_0 v0
-      [206] iconst_0
-      [207] putfield #58
-        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [210] goto +24 (target=234)
-      [213] aload_0 v0
-      [214] getfield #49
+      [206] getfield #49
         + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
-      [217] aload_0 v0
-      [218] invokevirtual #100
+      [209] aload_0 v0
+      [210] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [221] ldc #2
-        + Integer [2130837512]
-      [223] invokevirtual #80
+      [213] ldc #1
+        + Integer [2130837513]
+      [215] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [226] invokevirtual #85
+      [218] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [221] aload_0 v0
+      [222] iconst_0
+      [223] putfield #58
+        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
+      [226] goto +24 (target=250)
       [229] aload_0 v0
-      [230] iconst_1
-      [231] putfield #58
+      [230] getfield #49
+        + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
+      [233] aload_0 v0
+      [234] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [237] ldc #2
+        + Integer [2130837514]
+      [239] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [242] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [245] aload_0 v0
+      [246] iconst_1
+      [247] putfield #58
         + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [234] aload_1 v1
-      [235] invokevirtual #84
+      [250] aload_1 v1
+      [251] invokevirtual #87
         + Methodref [android/view/View.getId ()I]
-      [238] ldc #6
+      [254] ldc #6
         + Integer [2131296259]
-      [240] ificmpne +159 (target=399)
-      [243] aload_0 v0
-      [244] getfield #54
+      [256] ificmpne +159 (target=415)
+      [259] aload_0 v0
+      [260] getfield #54
         + Fieldref [com/meghan/lightsout/MainActivity.j Z]
-      [247] ifeq +27 (target=274)
-      [250] aload_0 v0
-      [251] getfield #45
-        + Fieldref [com/meghan/lightsout/MainActivity.a Landroid/widget/Button;]
-      [254] aload_0 v0
-      [255] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [258] ldc #1
-        + Integer [2130837511]
-      [260] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [263] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [263] ifeq +27 (target=290)
       [266] aload_0 v0
-      [267] iconst_0
-      [268] putfield #54
-        + Fieldref [com/meghan/lightsout/MainActivity.j Z]
-      [271] goto +24 (target=295)
-      [274] aload_0 v0
-      [275] getfield #45
+      [267] getfield #45
         + Fieldref [com/meghan/lightsout/MainActivity.a Landroid/widget/Button;]
-      [278] aload_0 v0
-      [279] invokevirtual #100
+      [270] aload_0 v0
+      [271] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [282] ldc #2
-        + Integer [2130837512]
-      [284] invokevirtual #80
+      [274] ldc #1
+        + Integer [2130837513]
+      [276] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [287] invokevirtual #85
+      [279] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [282] aload_0 v0
+      [283] iconst_0
+      [284] putfield #54
+        + Fieldref [com/meghan/lightsout/MainActivity.j Z]
+      [287] goto +24 (target=311)
       [290] aload_0 v0
-      [291] iconst_1
-      [292] putfield #54
-        + Fieldref [com/meghan/lightsout/MainActivity.j Z]
-      [295] aload_0 v0
-      [296] getfield #55
-        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
-      [299] ifeq +27 (target=326)
-      [302] aload_0 v0
-      [303] getfield #46
-        + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
+      [291] getfield #45
+        + Fieldref [com/meghan/lightsout/MainActivity.a Landroid/widget/Button;]
+      [294] aload_0 v0
+      [295] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [298] ldc #2
+        + Integer [2130837514]
+      [300] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [303] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [306] aload_0 v0
-      [307] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [310] ldc #1
-        + Integer [2130837511]
-      [312] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [315] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [307] iconst_1
+      [308] putfield #54
+        + Fieldref [com/meghan/lightsout/MainActivity.j Z]
+      [311] aload_0 v0
+      [312] getfield #55
+        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
+      [315] ifeq +27 (target=342)
       [318] aload_0 v0
-      [319] iconst_0
-      [320] putfield #55
-        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
-      [323] goto +24 (target=347)
-      [326] aload_0 v0
-      [327] getfield #46
+      [319] getfield #46
         + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
-      [330] aload_0 v0
-      [331] invokevirtual #100
+      [322] aload_0 v0
+      [323] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [334] ldc #2
-        + Integer [2130837512]
-      [336] invokevirtual #80
+      [326] ldc #1
+        + Integer [2130837513]
+      [328] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [339] invokevirtual #85
+      [331] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [334] aload_0 v0
+      [335] iconst_0
+      [336] putfield #55
+        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
+      [339] goto +24 (target=363)
       [342] aload_0 v0
-      [343] iconst_1
-      [344] putfield #55
-        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
-      [347] aload_0 v0
-      [348] getfield #56
-        + Fieldref [com/meghan/lightsout/MainActivity.l Z]
-      [351] ifeq +27 (target=378)
-      [354] aload_0 v0
-      [355] getfield #47
-        + Fieldref [com/meghan/lightsout/MainActivity.c Landroid/widget/Button;]
+      [343] getfield #46
+        + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
+      [346] aload_0 v0
+      [347] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [350] ldc #2
+        + Integer [2130837514]
+      [352] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [355] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [358] aload_0 v0
-      [359] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [362] ldc #1
-        + Integer [2130837511]
-      [364] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [367] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [359] iconst_1
+      [360] putfield #55
+        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
+      [363] aload_0 v0
+      [364] getfield #56
+        + Fieldref [com/meghan/lightsout/MainActivity.l Z]
+      [367] ifeq +27 (target=394)
       [370] aload_0 v0
-      [371] iconst_0
-      [372] putfield #56
-        + Fieldref [com/meghan/lightsout/MainActivity.l Z]
-      [375] goto +24 (target=399)
-      [378] aload_0 v0
-      [379] getfield #47
+      [371] getfield #47
         + Fieldref [com/meghan/lightsout/MainActivity.c Landroid/widget/Button;]
-      [382] aload_0 v0
-      [383] invokevirtual #100
+      [374] aload_0 v0
+      [375] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [386] ldc #2
-        + Integer [2130837512]
-      [388] invokevirtual #80
+      [378] ldc #1
+        + Integer [2130837513]
+      [380] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [391] invokevirtual #85
+      [383] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [386] aload_0 v0
+      [387] iconst_0
+      [388] putfield #56
+        + Fieldref [com/meghan/lightsout/MainActivity.l Z]
+      [391] goto +24 (target=415)
       [394] aload_0 v0
-      [395] iconst_1
-      [396] putfield #56
+      [395] getfield #47
+        + Fieldref [com/meghan/lightsout/MainActivity.c Landroid/widget/Button;]
+      [398] aload_0 v0
+      [399] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [402] ldc #2
+        + Integer [2130837514]
+      [404] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [407] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [410] aload_0 v0
+      [411] iconst_1
+      [412] putfield #56
         + Fieldref [com/meghan/lightsout/MainActivity.l Z]
-      [399] aload_1 v1
-      [400] invokevirtual #84
+      [415] aload_1 v1
+      [416] invokevirtual #87
         + Methodref [android/view/View.getId ()I]
-      [403] ldc #7
+      [419] ldc #7
         + Integer [2131296260]
-      [405] ificmpne +211 (target=616)
-      [408] aload_0 v0
-      [409] getfield #55
+      [421] ificmpne +211 (target=632)
+      [424] aload_0 v0
+      [425] getfield #55
         + Fieldref [com/meghan/lightsout/MainActivity.k Z]
-      [412] ifeq +27 (target=439)
-      [415] aload_0 v0
-      [416] getfield #46
-        + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
-      [419] aload_0 v0
-      [420] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [423] ldc #1
-        + Integer [2130837511]
-      [425] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [428] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [428] ifeq +27 (target=455)
       [431] aload_0 v0
-      [432] iconst_0
-      [433] putfield #55
-        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
-      [436] goto +24 (target=460)
-      [439] aload_0 v0
-      [440] getfield #46
+      [432] getfield #46
         + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
-      [443] aload_0 v0
-      [444] invokevirtual #100
+      [435] aload_0 v0
+      [436] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [447] ldc #2
-        + Integer [2130837512]
-      [449] invokevirtual #80
+      [439] ldc #1
+        + Integer [2130837513]
+      [441] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [452] invokevirtual #85
+      [444] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [447] aload_0 v0
+      [448] iconst_0
+      [449] putfield #55
+        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
+      [452] goto +24 (target=476)
       [455] aload_0 v0
-      [456] iconst_1
-      [457] putfield #55
-        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
-      [460] aload_0 v0
-      [461] getfield #56
-        + Fieldref [com/meghan/lightsout/MainActivity.l Z]
-      [464] ifeq +27 (target=491)
-      [467] aload_0 v0
-      [468] getfield #47
-        + Fieldref [com/meghan/lightsout/MainActivity.c Landroid/widget/Button;]
+      [456] getfield #46
+        + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
+      [459] aload_0 v0
+      [460] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [463] ldc #2
+        + Integer [2130837514]
+      [465] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [468] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [471] aload_0 v0
-      [472] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [475] ldc #1
-        + Integer [2130837511]
-      [477] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [480] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [472] iconst_1
+      [473] putfield #55
+        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
+      [476] aload_0 v0
+      [477] getfield #56
+        + Fieldref [com/meghan/lightsout/MainActivity.l Z]
+      [480] ifeq +27 (target=507)
       [483] aload_0 v0
-      [484] iconst_0
-      [485] putfield #56
-        + Fieldref [com/meghan/lightsout/MainActivity.l Z]
-      [488] goto +24 (target=512)
-      [491] aload_0 v0
-      [492] getfield #47
+      [484] getfield #47
         + Fieldref [com/meghan/lightsout/MainActivity.c Landroid/widget/Button;]
-      [495] aload_0 v0
-      [496] invokevirtual #100
+      [487] aload_0 v0
+      [488] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [499] ldc #2
-        + Integer [2130837512]
-      [501] invokevirtual #80
+      [491] ldc #1
+        + Integer [2130837513]
+      [493] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [504] invokevirtual #85
+      [496] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [499] aload_0 v0
+      [500] iconst_0
+      [501] putfield #56
+        + Fieldref [com/meghan/lightsout/MainActivity.l Z]
+      [504] goto +24 (target=528)
       [507] aload_0 v0
-      [508] iconst_1
-      [509] putfield #56
-        + Fieldref [com/meghan/lightsout/MainActivity.l Z]
-      [512] aload_0 v0
-      [513] getfield #58
-        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [516] ifeq +27 (target=543)
-      [519] aload_0 v0
-      [520] getfield #49
-        + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
+      [508] getfield #47
+        + Fieldref [com/meghan/lightsout/MainActivity.c Landroid/widget/Button;]
+      [511] aload_0 v0
+      [512] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [515] ldc #2
+        + Integer [2130837514]
+      [517] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [520] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [523] aload_0 v0
-      [524] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [527] ldc #1
-        + Integer [2130837511]
-      [529] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [532] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [524] iconst_1
+      [525] putfield #56
+        + Fieldref [com/meghan/lightsout/MainActivity.l Z]
+      [528] aload_0 v0
+      [529] getfield #58
+        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
+      [532] ifeq +27 (target=559)
       [535] aload_0 v0
-      [536] iconst_0
-      [537] putfield #58
-        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [540] goto +24 (target=564)
-      [543] aload_0 v0
-      [544] getfield #49
+      [536] getfield #49
         + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
-      [547] aload_0 v0
-      [548] invokevirtual #100
+      [539] aload_0 v0
+      [540] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [551] ldc #2
-        + Integer [2130837512]
-      [553] invokevirtual #80
+      [543] ldc #1
+        + Integer [2130837513]
+      [545] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [556] invokevirtual #85
+      [548] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [551] aload_0 v0
+      [552] iconst_0
+      [553] putfield #58
+        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
+      [556] goto +24 (target=580)
       [559] aload_0 v0
-      [560] iconst_1
-      [561] putfield #58
-        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [564] aload_0 v0
-      [565] getfield #59
-        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
-      [568] ifeq +27 (target=595)
-      [571] aload_0 v0
-      [572] getfield #50
-        + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
+      [560] getfield #49
+        + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
+      [563] aload_0 v0
+      [564] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [567] ldc #2
+        + Integer [2130837514]
+      [569] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [572] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [575] aload_0 v0
-      [576] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [579] ldc #1
-        + Integer [2130837511]
-      [581] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [584] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [576] iconst_1
+      [577] putfield #58
+        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
+      [580] aload_0 v0
+      [581] getfield #59
+        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
+      [584] ifeq +27 (target=611)
       [587] aload_0 v0
-      [588] iconst_0
-      [589] putfield #59
-        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
-      [592] goto +24 (target=616)
-      [595] aload_0 v0
-      [596] getfield #50
+      [588] getfield #50
         + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
-      [599] aload_0 v0
-      [600] invokevirtual #100
+      [591] aload_0 v0
+      [592] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [603] ldc #2
-        + Integer [2130837512]
-      [605] invokevirtual #80
+      [595] ldc #1
+        + Integer [2130837513]
+      [597] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [608] invokevirtual #85
+      [600] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [603] aload_0 v0
+      [604] iconst_0
+      [605] putfield #59
+        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
+      [608] goto +24 (target=632)
       [611] aload_0 v0
-      [612] iconst_1
-      [613] putfield #59
+      [612] getfield #50
+        + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
+      [615] aload_0 v0
+      [616] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [619] ldc #2
+        + Integer [2130837514]
+      [621] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [624] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [627] aload_0 v0
+      [628] iconst_1
+      [629] putfield #59
         + Fieldref [com/meghan/lightsout/MainActivity.o Z]
-      [616] aload_1 v1
-      [617] invokevirtual #84
+      [632] aload_1 v1
+      [633] invokevirtual #87
         + Methodref [android/view/View.getId ()I]
-      [620] ldc #8
+      [636] ldc #8
         + Integer [2131296261]
-      [622] ificmpne +159 (target=781)
-      [625] aload_0 v0
-      [626] getfield #54
+      [638] ificmpne +159 (target=797)
+      [641] aload_0 v0
+      [642] getfield #54
         + Fieldref [com/meghan/lightsout/MainActivity.j Z]
-      [629] ifeq +27 (target=656)
-      [632] aload_0 v0
-      [633] getfield #45
-        + Fieldref [com/meghan/lightsout/MainActivity.a Landroid/widget/Button;]
-      [636] aload_0 v0
-      [637] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [640] ldc #1
-        + Integer [2130837511]
-      [642] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [645] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [645] ifeq +27 (target=672)
       [648] aload_0 v0
-      [649] iconst_0
-      [650] putfield #54
-        + Fieldref [com/meghan/lightsout/MainActivity.j Z]
-      [653] goto +24 (target=677)
-      [656] aload_0 v0
-      [657] getfield #45
+      [649] getfield #45
         + Fieldref [com/meghan/lightsout/MainActivity.a Landroid/widget/Button;]
-      [660] aload_0 v0
-      [661] invokevirtual #100
+      [652] aload_0 v0
+      [653] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [664] ldc #2
-        + Integer [2130837512]
-      [666] invokevirtual #80
+      [656] ldc #1
+        + Integer [2130837513]
+      [658] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [669] invokevirtual #85
+      [661] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [672] aload_0 v0
-      [673] iconst_1
-      [674] putfield #54
+      [664] aload_0 v0
+      [665] iconst_0
+      [666] putfield #54
         + Fieldref [com/meghan/lightsout/MainActivity.j Z]
-      [677] aload_0 v0
-      [678] getfield #57
-        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
-      [681] ifeq +27 (target=708)
-      [684] aload_0 v0
-      [685] getfield #48
-        + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
+      [669] goto +24 (target=693)
+      [672] aload_0 v0
+      [673] getfield #45
+        + Fieldref [com/meghan/lightsout/MainActivity.a Landroid/widget/Button;]
+      [676] aload_0 v0
+      [677] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [680] ldc #2
+        + Integer [2130837514]
+      [682] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [685] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [688] aload_0 v0
-      [689] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [692] ldc #1
-        + Integer [2130837511]
-      [694] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [697] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [689] iconst_1
+      [690] putfield #54
+        + Fieldref [com/meghan/lightsout/MainActivity.j Z]
+      [693] aload_0 v0
+      [694] getfield #57
+        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
+      [697] ifeq +27 (target=724)
       [700] aload_0 v0
-      [701] iconst_0
-      [702] putfield #57
-        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
-      [705] goto +24 (target=729)
-      [708] aload_0 v0
-      [709] getfield #48
+      [701] getfield #48
         + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
-      [712] aload_0 v0
-      [713] invokevirtual #100
+      [704] aload_0 v0
+      [705] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [716] ldc #2
-        + Integer [2130837512]
-      [718] invokevirtual #80
+      [708] ldc #1
+        + Integer [2130837513]
+      [710] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [721] invokevirtual #85
+      [713] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [716] aload_0 v0
+      [717] iconst_0
+      [718] putfield #57
+        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
+      [721] goto +24 (target=745)
       [724] aload_0 v0
-      [725] iconst_1
-      [726] putfield #57
-        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
-      [729] aload_0 v0
-      [730] getfield #60
-        + Fieldref [com/meghan/lightsout/MainActivity.p Z]
-      [733] ifeq +27 (target=760)
-      [736] aload_0 v0
-      [737] getfield #51
-        + Fieldref [com/meghan/lightsout/MainActivity.g Landroid/widget/Button;]
+      [725] getfield #48
+        + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
+      [728] aload_0 v0
+      [729] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [732] ldc #2
+        + Integer [2130837514]
+      [734] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [737] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [740] aload_0 v0
-      [741] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [744] ldc #1
-        + Integer [2130837511]
-      [746] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [749] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [741] iconst_1
+      [742] putfield #57
+        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
+      [745] aload_0 v0
+      [746] getfield #60
+        + Fieldref [com/meghan/lightsout/MainActivity.p Z]
+      [749] ifeq +27 (target=776)
       [752] aload_0 v0
-      [753] iconst_0
-      [754] putfield #60
-        + Fieldref [com/meghan/lightsout/MainActivity.p Z]
-      [757] goto +24 (target=781)
-      [760] aload_0 v0
-      [761] getfield #51
+      [753] getfield #51
         + Fieldref [com/meghan/lightsout/MainActivity.g Landroid/widget/Button;]
-      [764] aload_0 v0
-      [765] invokevirtual #100
+      [756] aload_0 v0
+      [757] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [768] ldc #2
-        + Integer [2130837512]
-      [770] invokevirtual #80
+      [760] ldc #1
+        + Integer [2130837513]
+      [762] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [773] invokevirtual #85
+      [765] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [768] aload_0 v0
+      [769] iconst_0
+      [770] putfield #60
+        + Fieldref [com/meghan/lightsout/MainActivity.p Z]
+      [773] goto +24 (target=797)
       [776] aload_0 v0
-      [777] iconst_1
-      [778] putfield #60
+      [777] getfield #51
+        + Fieldref [com/meghan/lightsout/MainActivity.g Landroid/widget/Button;]
+      [780] aload_0 v0
+      [781] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [784] ldc #2
+        + Integer [2130837514]
+      [786] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [789] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [792] aload_0 v0
+      [793] iconst_1
+      [794] putfield #60
         + Fieldref [com/meghan/lightsout/MainActivity.p Z]
-      [781] aload_1 v1
-      [782] invokevirtual #84
+      [797] aload_1 v1
+      [798] invokevirtual #87
         + Methodref [android/view/View.getId ()I]
-      [785] ldc #9
+      [801] ldc #9
         + Integer [2131296262]
-      [787] ificmpne +263 (target=1050)
-      [790] aload_0 v0
-      [791] getfield #58
+      [803] ificmpne +263 (target=1066)
+      [806] aload_0 v0
+      [807] getfield #58
         + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [794] ifeq +27 (target=821)
-      [797] aload_0 v0
-      [798] getfield #49
-        + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
-      [801] aload_0 v0
-      [802] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [805] ldc #1
-        + Integer [2130837511]
-      [807] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [810] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [810] ifeq +27 (target=837)
       [813] aload_0 v0
-      [814] iconst_0
-      [815] putfield #58
-        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [818] goto +24 (target=842)
-      [821] aload_0 v0
-      [822] getfield #49
+      [814] getfield #49
         + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
-      [825] aload_0 v0
-      [826] invokevirtual #100
+      [817] aload_0 v0
+      [818] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [829] ldc #2
-        + Integer [2130837512]
-      [831] invokevirtual #80
+      [821] ldc #1
+        + Integer [2130837513]
+      [823] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [834] invokevirtual #85
+      [826] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [829] aload_0 v0
+      [830] iconst_0
+      [831] putfield #58
+        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
+      [834] goto +24 (target=858)
       [837] aload_0 v0
-      [838] iconst_1
-      [839] putfield #58
-        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [842] aload_0 v0
-      [843] getfield #55
-        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
-      [846] ifeq +27 (target=873)
-      [849] aload_0 v0
-      [850] getfield #46
-        + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
+      [838] getfield #49
+        + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
+      [841] aload_0 v0
+      [842] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [845] ldc #2
+        + Integer [2130837514]
+      [847] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [850] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [853] aload_0 v0
-      [854] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [857] ldc #1
-        + Integer [2130837511]
-      [859] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [862] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [854] iconst_1
+      [855] putfield #58
+        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
+      [858] aload_0 v0
+      [859] getfield #55
+        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
+      [862] ifeq +27 (target=889)
       [865] aload_0 v0
-      [866] iconst_0
-      [867] putfield #55
-        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
-      [870] goto +24 (target=894)
-      [873] aload_0 v0
-      [874] getfield #46
+      [866] getfield #46
         + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
-      [877] aload_0 v0
-      [878] invokevirtual #100
+      [869] aload_0 v0
+      [870] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [881] ldc #2
-        + Integer [2130837512]
-      [883] invokevirtual #80
+      [873] ldc #1
+        + Integer [2130837513]
+      [875] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [886] invokevirtual #85
+      [878] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [889] aload_0 v0
-      [890] iconst_1
-      [891] putfield #55
+      [881] aload_0 v0
+      [882] iconst_0
+      [883] putfield #55
         + Fieldref [com/meghan/lightsout/MainActivity.k Z]
-      [894] aload_0 v0
-      [895] getfield #57
-        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
-      [898] ifeq +27 (target=925)
-      [901] aload_0 v0
-      [902] getfield #48
-        + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
+      [886] goto +24 (target=910)
+      [889] aload_0 v0
+      [890] getfield #46
+        + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
+      [893] aload_0 v0
+      [894] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [897] ldc #2
+        + Integer [2130837514]
+      [899] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [902] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [905] aload_0 v0
-      [906] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [909] ldc #1
-        + Integer [2130837511]
-      [911] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [914] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [906] iconst_1
+      [907] putfield #55
+        + Fieldref [com/meghan/lightsout/MainActivity.k Z]
+      [910] aload_0 v0
+      [911] getfield #57
+        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
+      [914] ifeq +27 (target=941)
       [917] aload_0 v0
-      [918] iconst_0
-      [919] putfield #57
-        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
-      [922] goto +24 (target=946)
-      [925] aload_0 v0
-      [926] getfield #48
+      [918] getfield #48
         + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
-      [929] aload_0 v0
-      [930] invokevirtual #100
+      [921] aload_0 v0
+      [922] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [933] ldc #2
-        + Integer [2130837512]
-      [935] invokevirtual #80
+      [925] ldc #1
+        + Integer [2130837513]
+      [927] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [938] invokevirtual #85
+      [930] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [933] aload_0 v0
+      [934] iconst_0
+      [935] putfield #57
+        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
+      [938] goto +24 (target=962)
       [941] aload_0 v0
-      [942] iconst_1
-      [943] putfield #57
-        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
-      [946] aload_0 v0
-      [947] getfield #59
-        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
-      [950] ifeq +27 (target=977)
-      [953] aload_0 v0
-      [954] getfield #50
-        + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
+      [942] getfield #48
+        + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
+      [945] aload_0 v0
+      [946] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [949] ldc #2
+        + Integer [2130837514]
+      [951] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [954] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [957] aload_0 v0
-      [958] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [961] ldc #1
-        + Integer [2130837511]
-      [963] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [966] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [958] iconst_1
+      [959] putfield #57
+        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
+      [962] aload_0 v0
+      [963] getfield #59
+        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
+      [966] ifeq +27 (target=993)
       [969] aload_0 v0
-      [970] iconst_0
-      [971] putfield #59
-        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
-      [974] goto +24 (target=998)
-      [977] aload_0 v0
-      [978] getfield #50
+      [970] getfield #50
         + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
-      [981] aload_0 v0
-      [982] invokevirtual #100
+      [973] aload_0 v0
+      [974] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [985] ldc #2
-        + Integer [2130837512]
-      [987] invokevirtual #80
+      [977] ldc #1
+        + Integer [2130837513]
+      [979] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [990] invokevirtual #85
+      [982] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [985] aload_0 v0
+      [986] iconst_0
+      [987] putfield #59
+        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
+      [990] goto +24 (target=1014)
       [993] aload_0 v0
-      [994] iconst_1
-      [995] putfield #59
-        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
-      [998] aload_0 v0
-      [999] getfield #61
-        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
-      [1002] ifeq +27 (target=1029)
-      [1005] aload_0 v0
-      [1006] getfield #52
-        + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
+      [994] getfield #50
+        + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
+      [997] aload_0 v0
+      [998] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1001] ldc #2
+        + Integer [2130837514]
+      [1003] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1006] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [1009] aload_0 v0
-      [1010] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1013] ldc #1
-        + Integer [2130837511]
-      [1015] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1018] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1010] iconst_1
+      [1011] putfield #59
+        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
+      [1014] aload_0 v0
+      [1015] getfield #61
+        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
+      [1018] ifeq +27 (target=1045)
       [1021] aload_0 v0
-      [1022] iconst_0
-      [1023] putfield #61
-        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
-      [1026] goto +24 (target=1050)
-      [1029] aload_0 v0
-      [1030] getfield #52
+      [1022] getfield #52
         + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
-      [1033] aload_0 v0
-      [1034] invokevirtual #100
+      [1025] aload_0 v0
+      [1026] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1037] ldc #2
-        + Integer [2130837512]
-      [1039] invokevirtual #80
+      [1029] ldc #1
+        + Integer [2130837513]
+      [1031] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1042] invokevirtual #85
+      [1034] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1037] aload_0 v0
+      [1038] iconst_0
+      [1039] putfield #61
+        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
+      [1042] goto +24 (target=1066)
       [1045] aload_0 v0
-      [1046] iconst_1
-      [1047] putfield #61
+      [1046] getfield #52
+        + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
+      [1049] aload_0 v0
+      [1050] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1053] ldc #2
+        + Integer [2130837514]
+      [1055] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1058] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1061] aload_0 v0
+      [1062] iconst_1
+      [1063] putfield #61
         + Fieldref [com/meghan/lightsout/MainActivity.q Z]
-      [1050] aload_1 v1
-      [1051] invokevirtual #84
+      [1066] aload_1 v1
+      [1067] invokevirtual #87
         + Methodref [android/view/View.getId ()I]
-      [1054] ldc #10
+      [1070] ldc #10
         + Integer [2131296263]
-      [1056] ificmpne +159 (target=1215)
-      [1059] aload_0 v0
-      [1060] getfield #59
+      [1072] ificmpne +159 (target=1231)
+      [1075] aload_0 v0
+      [1076] getfield #59
         + Fieldref [com/meghan/lightsout/MainActivity.o Z]
-      [1063] ifeq +27 (target=1090)
-      [1066] aload_0 v0
-      [1067] getfield #50
-        + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
-      [1070] aload_0 v0
-      [1071] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1074] ldc #1
-        + Integer [2130837511]
-      [1076] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1079] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1079] ifeq +27 (target=1106)
       [1082] aload_0 v0
-      [1083] iconst_0
-      [1084] putfield #59
-        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
-      [1087] goto +24 (target=1111)
-      [1090] aload_0 v0
-      [1091] getfield #50
+      [1083] getfield #50
         + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
-      [1094] aload_0 v0
-      [1095] invokevirtual #100
+      [1086] aload_0 v0
+      [1087] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1098] ldc #2
-        + Integer [2130837512]
-      [1100] invokevirtual #80
+      [1090] ldc #1
+        + Integer [2130837513]
+      [1092] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1103] invokevirtual #85
+      [1095] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1098] aload_0 v0
+      [1099] iconst_0
+      [1100] putfield #59
+        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
+      [1103] goto +24 (target=1127)
       [1106] aload_0 v0
-      [1107] iconst_1
-      [1108] putfield #59
-        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
-      [1111] aload_0 v0
-      [1112] getfield #56
-        + Fieldref [com/meghan/lightsout/MainActivity.l Z]
-      [1115] ifeq +27 (target=1142)
-      [1118] aload_0 v0
-      [1119] getfield #47
-        + Fieldref [com/meghan/lightsout/MainActivity.c Landroid/widget/Button;]
+      [1107] getfield #50
+        + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
+      [1110] aload_0 v0
+      [1111] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1114] ldc #2
+        + Integer [2130837514]
+      [1116] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1119] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [1122] aload_0 v0
-      [1123] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1126] ldc #1
-        + Integer [2130837511]
-      [1128] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1131] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1123] iconst_1
+      [1124] putfield #59
+        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
+      [1127] aload_0 v0
+      [1128] getfield #56
+        + Fieldref [com/meghan/lightsout/MainActivity.l Z]
+      [1131] ifeq +27 (target=1158)
       [1134] aload_0 v0
-      [1135] iconst_0
-      [1136] putfield #56
-        + Fieldref [com/meghan/lightsout/MainActivity.l Z]
-      [1139] goto +24 (target=1163)
-      [1142] aload_0 v0
-      [1143] getfield #47
+      [1135] getfield #47
         + Fieldref [com/meghan/lightsout/MainActivity.c Landroid/widget/Button;]
-      [1146] aload_0 v0
-      [1147] invokevirtual #100
+      [1138] aload_0 v0
+      [1139] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1150] ldc #2
-        + Integer [2130837512]
-      [1152] invokevirtual #80
+      [1142] ldc #1
+        + Integer [2130837513]
+      [1144] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1155] invokevirtual #85
+      [1147] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [1158] aload_0 v0
-      [1159] iconst_1
-      [1160] putfield #56
+      [1150] aload_0 v0
+      [1151] iconst_0
+      [1152] putfield #56
         + Fieldref [com/meghan/lightsout/MainActivity.l Z]
-      [1163] aload_0 v0
-      [1164] getfield #62
-        + Fieldref [com/meghan/lightsout/MainActivity.r Z]
-      [1167] ifeq +27 (target=1194)
-      [1170] aload_0 v0
-      [1171] getfield #53
-        + Fieldref [com/meghan/lightsout/MainActivity.i Landroid/widget/Button;]
+      [1155] goto +24 (target=1179)
+      [1158] aload_0 v0
+      [1159] getfield #47
+        + Fieldref [com/meghan/lightsout/MainActivity.c Landroid/widget/Button;]
+      [1162] aload_0 v0
+      [1163] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1166] ldc #2
+        + Integer [2130837514]
+      [1168] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1171] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [1174] aload_0 v0
-      [1175] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1178] ldc #1
-        + Integer [2130837511]
-      [1180] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1183] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1175] iconst_1
+      [1176] putfield #56
+        + Fieldref [com/meghan/lightsout/MainActivity.l Z]
+      [1179] aload_0 v0
+      [1180] getfield #62
+        + Fieldref [com/meghan/lightsout/MainActivity.r Z]
+      [1183] ifeq +27 (target=1210)
       [1186] aload_0 v0
-      [1187] iconst_0
-      [1188] putfield #62
-        + Fieldref [com/meghan/lightsout/MainActivity.r Z]
-      [1191] goto +24 (target=1215)
-      [1194] aload_0 v0
-      [1195] getfield #53
+      [1187] getfield #53
         + Fieldref [com/meghan/lightsout/MainActivity.i Landroid/widget/Button;]
-      [1198] aload_0 v0
-      [1199] invokevirtual #100
+      [1190] aload_0 v0
+      [1191] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1202] ldc #2
-        + Integer [2130837512]
-      [1204] invokevirtual #80
+      [1194] ldc #1
+        + Integer [2130837513]
+      [1196] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1207] invokevirtual #85
+      [1199] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1202] aload_0 v0
+      [1203] iconst_0
+      [1204] putfield #62
+        + Fieldref [com/meghan/lightsout/MainActivity.r Z]
+      [1207] goto +24 (target=1231)
       [1210] aload_0 v0
-      [1211] iconst_1
-      [1212] putfield #62
+      [1211] getfield #53
+        + Fieldref [com/meghan/lightsout/MainActivity.i Landroid/widget/Button;]
+      [1214] aload_0 v0
+      [1215] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1218] ldc #2
+        + Integer [2130837514]
+      [1220] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1223] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1226] aload_0 v0
+      [1227] iconst_1
+      [1228] putfield #62
         + Fieldref [com/meghan/lightsout/MainActivity.r Z]
-      [1215] aload_1 v1
-      [1216] invokevirtual #84
+      [1231] aload_1 v1
+      [1232] invokevirtual #87
         + Methodref [android/view/View.getId ()I]
-      [1219] ldc #11
+      [1235] ldc #11
         + Integer [2131296264]
-      [1221] ificmpne +211 (target=1432)
-      [1224] aload_0 v0
-      [1225] getfield #60
+      [1237] ificmpne +211 (target=1448)
+      [1240] aload_0 v0
+      [1241] getfield #60
         + Fieldref [com/meghan/lightsout/MainActivity.p Z]
-      [1228] ifeq +27 (target=1255)
-      [1231] aload_0 v0
-      [1232] getfield #51
-        + Fieldref [com/meghan/lightsout/MainActivity.g Landroid/widget/Button;]
-      [1235] aload_0 v0
-      [1236] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1239] ldc #1
-        + Integer [2130837511]
-      [1241] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1244] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1244] ifeq +27 (target=1271)
       [1247] aload_0 v0
-      [1248] iconst_0
-      [1249] putfield #60
-        + Fieldref [com/meghan/lightsout/MainActivity.p Z]
-      [1252] goto +24 (target=1276)
-      [1255] aload_0 v0
-      [1256] getfield #51
+      [1248] getfield #51
         + Fieldref [com/meghan/lightsout/MainActivity.g Landroid/widget/Button;]
-      [1259] aload_0 v0
-      [1260] invokevirtual #100
+      [1251] aload_0 v0
+      [1252] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1263] ldc #2
-        + Integer [2130837512]
-      [1265] invokevirtual #80
+      [1255] ldc #1
+        + Integer [2130837513]
+      [1257] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1268] invokevirtual #85
+      [1260] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1263] aload_0 v0
+      [1264] iconst_0
+      [1265] putfield #60
+        + Fieldref [com/meghan/lightsout/MainActivity.p Z]
+      [1268] goto +24 (target=1292)
       [1271] aload_0 v0
-      [1272] iconst_1
-      [1273] putfield #60
-        + Fieldref [com/meghan/lightsout/MainActivity.p Z]
-      [1276] aload_0 v0
-      [1277] getfield #57
-        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
-      [1280] ifeq +27 (target=1307)
-      [1283] aload_0 v0
-      [1284] getfield #48
-        + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
+      [1272] getfield #51
+        + Fieldref [com/meghan/lightsout/MainActivity.g Landroid/widget/Button;]
+      [1275] aload_0 v0
+      [1276] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1279] ldc #2
+        + Integer [2130837514]
+      [1281] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1284] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [1287] aload_0 v0
-      [1288] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1291] ldc #1
-        + Integer [2130837511]
-      [1293] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1296] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1288] iconst_1
+      [1289] putfield #60
+        + Fieldref [com/meghan/lightsout/MainActivity.p Z]
+      [1292] aload_0 v0
+      [1293] getfield #57
+        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
+      [1296] ifeq +27 (target=1323)
       [1299] aload_0 v0
-      [1300] iconst_0
-      [1301] putfield #57
-        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
-      [1304] goto +24 (target=1328)
-      [1307] aload_0 v0
-      [1308] getfield #48
+      [1300] getfield #48
         + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
-      [1311] aload_0 v0
-      [1312] invokevirtual #100
+      [1303] aload_0 v0
+      [1304] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1315] ldc #2
-        + Integer [2130837512]
-      [1317] invokevirtual #80
+      [1307] ldc #1
+        + Integer [2130837513]
+      [1309] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1320] invokevirtual #85
+      [1312] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [1323] aload_0 v0
-      [1324] iconst_1
-      [1325] putfield #57
+      [1315] aload_0 v0
+      [1316] iconst_0
+      [1317] putfield #57
         + Fieldref [com/meghan/lightsout/MainActivity.m Z]
-      [1328] aload_0 v0
-      [1329] getfield #58
-        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [1332] ifeq +27 (target=1359)
-      [1335] aload_0 v0
-      [1336] getfield #49
-        + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
+      [1320] goto +24 (target=1344)
+      [1323] aload_0 v0
+      [1324] getfield #48
+        + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
+      [1327] aload_0 v0
+      [1328] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1331] ldc #2
+        + Integer [2130837514]
+      [1333] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1336] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [1339] aload_0 v0
-      [1340] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1343] ldc #1
-        + Integer [2130837511]
-      [1345] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1348] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1340] iconst_1
+      [1341] putfield #57
+        + Fieldref [com/meghan/lightsout/MainActivity.m Z]
+      [1344] aload_0 v0
+      [1345] getfield #58
+        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
+      [1348] ifeq +27 (target=1375)
       [1351] aload_0 v0
-      [1352] iconst_0
-      [1353] putfield #58
-        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [1356] goto +24 (target=1380)
-      [1359] aload_0 v0
-      [1360] getfield #49
+      [1352] getfield #49
         + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
-      [1363] aload_0 v0
-      [1364] invokevirtual #100
+      [1355] aload_0 v0
+      [1356] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1367] ldc #2
-        + Integer [2130837512]
-      [1369] invokevirtual #80
+      [1359] ldc #1
+        + Integer [2130837513]
+      [1361] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1372] invokevirtual #85
+      [1364] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1367] aload_0 v0
+      [1368] iconst_0
+      [1369] putfield #58
+        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
+      [1372] goto +24 (target=1396)
       [1375] aload_0 v0
-      [1376] iconst_1
-      [1377] putfield #58
-        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [1380] aload_0 v0
-      [1381] getfield #61
-        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
-      [1384] ifeq +27 (target=1411)
-      [1387] aload_0 v0
-      [1388] getfield #52
-        + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
+      [1376] getfield #49
+        + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
+      [1379] aload_0 v0
+      [1380] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1383] ldc #2
+        + Integer [2130837514]
+      [1385] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1388] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [1391] aload_0 v0
-      [1392] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1395] ldc #1
-        + Integer [2130837511]
-      [1397] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1400] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1392] iconst_1
+      [1393] putfield #58
+        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
+      [1396] aload_0 v0
+      [1397] getfield #61
+        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
+      [1400] ifeq +27 (target=1427)
       [1403] aload_0 v0
-      [1404] iconst_0
-      [1405] putfield #61
-        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
-      [1408] goto +24 (target=1432)
-      [1411] aload_0 v0
-      [1412] getfield #52
+      [1404] getfield #52
         + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
-      [1415] aload_0 v0
-      [1416] invokevirtual #100
+      [1407] aload_0 v0
+      [1408] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1419] ldc #2
-        + Integer [2130837512]
-      [1421] invokevirtual #80
+      [1411] ldc #1
+        + Integer [2130837513]
+      [1413] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1424] invokevirtual #85
+      [1416] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1419] aload_0 v0
+      [1420] iconst_0
+      [1421] putfield #61
+        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
+      [1424] goto +24 (target=1448)
       [1427] aload_0 v0
-      [1428] iconst_1
-      [1429] putfield #61
+      [1428] getfield #52
+        + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
+      [1431] aload_0 v0
+      [1432] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1435] ldc #2
+        + Integer [2130837514]
+      [1437] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1440] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1443] aload_0 v0
+      [1444] iconst_1
+      [1445] putfield #61
         + Fieldref [com/meghan/lightsout/MainActivity.q Z]
-      [1432] aload_1 v1
-      [1433] invokevirtual #84
+      [1448] aload_1 v1
+      [1449] invokevirtual #87
         + Methodref [android/view/View.getId ()I]
-      [1436] ldc #12
+      [1452] ldc #12
         + Integer [2131296265]
-      [1438] ificmpne +159 (target=1597)
-      [1441] aload_0 v0
-      [1442] getfield #60
+      [1454] ificmpne +159 (target=1613)
+      [1457] aload_0 v0
+      [1458] getfield #60
         + Fieldref [com/meghan/lightsout/MainActivity.p Z]
-      [1445] ifeq +27 (target=1472)
-      [1448] aload_0 v0
-      [1449] getfield #51
-        + Fieldref [com/meghan/lightsout/MainActivity.g Landroid/widget/Button;]
-      [1452] aload_0 v0
-      [1453] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1456] ldc #1
-        + Integer [2130837511]
-      [1458] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1461] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1461] ifeq +27 (target=1488)
       [1464] aload_0 v0
-      [1465] iconst_0
-      [1466] putfield #60
-        + Fieldref [com/meghan/lightsout/MainActivity.p Z]
-      [1469] goto +24 (target=1493)
-      [1472] aload_0 v0
-      [1473] getfield #51
+      [1465] getfield #51
         + Fieldref [com/meghan/lightsout/MainActivity.g Landroid/widget/Button;]
-      [1476] aload_0 v0
-      [1477] invokevirtual #100
+      [1468] aload_0 v0
+      [1469] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1480] ldc #2
-        + Integer [2130837512]
-      [1482] invokevirtual #80
+      [1472] ldc #1
+        + Integer [2130837513]
+      [1474] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1485] invokevirtual #85
+      [1477] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [1488] aload_0 v0
-      [1489] iconst_1
-      [1490] putfield #60
+      [1480] aload_0 v0
+      [1481] iconst_0
+      [1482] putfield #60
         + Fieldref [com/meghan/lightsout/MainActivity.p Z]
-      [1493] aload_0 v0
-      [1494] getfield #61
-        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
-      [1497] ifeq +27 (target=1524)
-      [1500] aload_0 v0
-      [1501] getfield #52
-        + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
+      [1485] goto +24 (target=1509)
+      [1488] aload_0 v0
+      [1489] getfield #51
+        + Fieldref [com/meghan/lightsout/MainActivity.g Landroid/widget/Button;]
+      [1492] aload_0 v0
+      [1493] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1496] ldc #2
+        + Integer [2130837514]
+      [1498] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1501] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [1504] aload_0 v0
-      [1505] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1508] ldc #1
-        + Integer [2130837511]
-      [1510] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1513] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1505] iconst_1
+      [1506] putfield #60
+        + Fieldref [com/meghan/lightsout/MainActivity.p Z]
+      [1509] aload_0 v0
+      [1510] getfield #61
+        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
+      [1513] ifeq +27 (target=1540)
       [1516] aload_0 v0
-      [1517] iconst_0
-      [1518] putfield #61
-        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
-      [1521] goto +24 (target=1545)
-      [1524] aload_0 v0
-      [1525] getfield #52
+      [1517] getfield #52
         + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
-      [1528] aload_0 v0
-      [1529] invokevirtual #100
+      [1520] aload_0 v0
+      [1521] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1532] ldc #2
-        + Integer [2130837512]
-      [1534] invokevirtual #80
+      [1524] ldc #1
+        + Integer [2130837513]
+      [1526] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1537] invokevirtual #85
+      [1529] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1532] aload_0 v0
+      [1533] iconst_0
+      [1534] putfield #61
+        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
+      [1537] goto +24 (target=1561)
       [1540] aload_0 v0
-      [1541] iconst_1
-      [1542] putfield #61
-        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
-      [1545] aload_0 v0
-      [1546] getfield #62
-        + Fieldref [com/meghan/lightsout/MainActivity.r Z]
-      [1549] ifeq +27 (target=1576)
-      [1552] aload_0 v0
-      [1553] getfield #53
-        + Fieldref [com/meghan/lightsout/MainActivity.i Landroid/widget/Button;]
+      [1541] getfield #52
+        + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
+      [1544] aload_0 v0
+      [1545] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1548] ldc #2
+        + Integer [2130837514]
+      [1550] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1553] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [1556] aload_0 v0
-      [1557] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1560] ldc #1
-        + Integer [2130837511]
-      [1562] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1565] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1557] iconst_1
+      [1558] putfield #61
+        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
+      [1561] aload_0 v0
+      [1562] getfield #62
+        + Fieldref [com/meghan/lightsout/MainActivity.r Z]
+      [1565] ifeq +27 (target=1592)
       [1568] aload_0 v0
-      [1569] iconst_0
-      [1570] putfield #62
-        + Fieldref [com/meghan/lightsout/MainActivity.r Z]
-      [1573] goto +24 (target=1597)
-      [1576] aload_0 v0
-      [1577] getfield #53
+      [1569] getfield #53
         + Fieldref [com/meghan/lightsout/MainActivity.i Landroid/widget/Button;]
-      [1580] aload_0 v0
-      [1581] invokevirtual #100
+      [1572] aload_0 v0
+      [1573] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1584] ldc #2
-        + Integer [2130837512]
-      [1586] invokevirtual #80
+      [1576] ldc #1
+        + Integer [2130837513]
+      [1578] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1589] invokevirtual #85
+      [1581] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1584] aload_0 v0
+      [1585] iconst_0
+      [1586] putfield #62
+        + Fieldref [com/meghan/lightsout/MainActivity.r Z]
+      [1589] goto +24 (target=1613)
       [1592] aload_0 v0
-      [1593] iconst_1
-      [1594] putfield #62
+      [1593] getfield #53
+        + Fieldref [com/meghan/lightsout/MainActivity.i Landroid/widget/Button;]
+      [1596] aload_0 v0
+      [1597] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1600] ldc #2
+        + Integer [2130837514]
+      [1602] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1605] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1608] aload_0 v0
+      [1609] iconst_1
+      [1610] putfield #62
         + Fieldref [com/meghan/lightsout/MainActivity.r Z]
-      [1597] aload_1 v1
-      [1598] invokevirtual #84
+      [1613] aload_1 v1
+      [1614] invokevirtual #87
         + Methodref [android/view/View.getId ()I]
-      [1601] ldc #13
+      [1617] ldc #13
         + Integer [2131296266]
-      [1603] ificmpne +211 (target=1814)
-      [1606] aload_0 v0
-      [1607] getfield #58
+      [1619] ificmpne +211 (target=1830)
+      [1622] aload_0 v0
+      [1623] getfield #58
         + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [1610] ifeq +27 (target=1637)
-      [1613] aload_0 v0
-      [1614] getfield #49
-        + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
-      [1617] aload_0 v0
-      [1618] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1621] ldc #1
-        + Integer [2130837511]
-      [1623] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1626] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1626] ifeq +27 (target=1653)
       [1629] aload_0 v0
-      [1630] iconst_0
-      [1631] putfield #58
-        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [1634] goto +24 (target=1658)
-      [1637] aload_0 v0
-      [1638] getfield #49
+      [1630] getfield #49
         + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
-      [1641] aload_0 v0
-      [1642] invokevirtual #100
+      [1633] aload_0 v0
+      [1634] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1645] ldc #2
-        + Integer [2130837512]
-      [1647] invokevirtual #80
+      [1637] ldc #1
+        + Integer [2130837513]
+      [1639] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1650] invokevirtual #85
+      [1642] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [1653] aload_0 v0
-      [1654] iconst_1
-      [1655] putfield #58
+      [1645] aload_0 v0
+      [1646] iconst_0
+      [1647] putfield #58
         + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [1658] aload_0 v0
-      [1659] getfield #62
-        + Fieldref [com/meghan/lightsout/MainActivity.r Z]
-      [1662] ifeq +27 (target=1689)
-      [1665] aload_0 v0
-      [1666] getfield #53
-        + Fieldref [com/meghan/lightsout/MainActivity.i Landroid/widget/Button;]
+      [1650] goto +24 (target=1674)
+      [1653] aload_0 v0
+      [1654] getfield #49
+        + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
+      [1657] aload_0 v0
+      [1658] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1661] ldc #2
+        + Integer [2130837514]
+      [1663] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1666] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [1669] aload_0 v0
-      [1670] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1673] ldc #1
-        + Integer [2130837511]
-      [1675] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1678] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1670] iconst_1
+      [1671] putfield #58
+        + Fieldref [com/meghan/lightsout/MainActivity.n Z]
+      [1674] aload_0 v0
+      [1675] getfield #62
+        + Fieldref [com/meghan/lightsout/MainActivity.r Z]
+      [1678] ifeq +27 (target=1705)
       [1681] aload_0 v0
-      [1682] iconst_0
-      [1683] putfield #62
-        + Fieldref [com/meghan/lightsout/MainActivity.r Z]
-      [1686] goto +24 (target=1710)
-      [1689] aload_0 v0
-      [1690] getfield #53
+      [1682] getfield #53
         + Fieldref [com/meghan/lightsout/MainActivity.i Landroid/widget/Button;]
-      [1693] aload_0 v0
-      [1694] invokevirtual #100
+      [1685] aload_0 v0
+      [1686] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1697] ldc #2
-        + Integer [2130837512]
-      [1699] invokevirtual #80
+      [1689] ldc #1
+        + Integer [2130837513]
+      [1691] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1702] invokevirtual #85
+      [1694] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [1705] aload_0 v0
-      [1706] iconst_1
-      [1707] putfield #62
+      [1697] aload_0 v0
+      [1698] iconst_0
+      [1699] putfield #62
         + Fieldref [com/meghan/lightsout/MainActivity.r Z]
-      [1710] aload_0 v0
-      [1711] getfield #61
-        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
-      [1714] ifeq +27 (target=1741)
-      [1717] aload_0 v0
-      [1718] getfield #52
-        + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
+      [1702] goto +24 (target=1726)
+      [1705] aload_0 v0
+      [1706] getfield #53
+        + Fieldref [com/meghan/lightsout/MainActivity.i Landroid/widget/Button;]
+      [1709] aload_0 v0
+      [1710] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1713] ldc #2
+        + Integer [2130837514]
+      [1715] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1718] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [1721] aload_0 v0
-      [1722] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1725] ldc #1
-        + Integer [2130837511]
-      [1727] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1730] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1722] iconst_1
+      [1723] putfield #62
+        + Fieldref [com/meghan/lightsout/MainActivity.r Z]
+      [1726] aload_0 v0
+      [1727] getfield #61
+        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
+      [1730] ifeq +27 (target=1757)
       [1733] aload_0 v0
-      [1734] iconst_0
-      [1735] putfield #61
-        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
-      [1738] goto +24 (target=1762)
-      [1741] aload_0 v0
-      [1742] getfield #52
+      [1734] getfield #52
         + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
-      [1745] aload_0 v0
-      [1746] invokevirtual #100
+      [1737] aload_0 v0
+      [1738] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1749] ldc #2
-        + Integer [2130837512]
-      [1751] invokevirtual #80
+      [1741] ldc #1
+        + Integer [2130837513]
+      [1743] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1754] invokevirtual #85
+      [1746] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [1757] aload_0 v0
-      [1758] iconst_1
-      [1759] putfield #61
+      [1749] aload_0 v0
+      [1750] iconst_0
+      [1751] putfield #61
         + Fieldref [com/meghan/lightsout/MainActivity.q Z]
-      [1762] aload_0 v0
-      [1763] getfield #59
-        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
-      [1766] ifeq +27 (target=1793)
-      [1769] aload_0 v0
-      [1770] getfield #50
-        + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
+      [1754] goto +24 (target=1778)
+      [1757] aload_0 v0
+      [1758] getfield #52
+        + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
+      [1761] aload_0 v0
+      [1762] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1765] ldc #2
+        + Integer [2130837514]
+      [1767] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1770] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
       [1773] aload_0 v0
-      [1774] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1777] ldc #1
-        + Integer [2130837511]
-      [1779] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1782] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1774] iconst_1
+      [1775] putfield #61
+        + Fieldref [com/meghan/lightsout/MainActivity.q Z]
+      [1778] aload_0 v0
+      [1779] getfield #59
+        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
+      [1782] ifeq +27 (target=1809)
       [1785] aload_0 v0
-      [1786] iconst_0
-      [1787] putfield #59
-        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
-      [1790] goto +24 (target=1814)
-      [1793] aload_0 v0
-      [1794] getfield #50
+      [1786] getfield #50
         + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
-      [1797] aload_0 v0
-      [1798] invokevirtual #100
+      [1789] aload_0 v0
+      [1790] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [1801] ldc #2
-        + Integer [2130837512]
-      [1803] invokevirtual #80
+      [1793] ldc #1
+        + Integer [2130837513]
+      [1795] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [1806] invokevirtual #85
+      [1798] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [1809] aload_0 v0
-      [1810] iconst_1
-      [1811] putfield #59
+      [1801] aload_0 v0
+      [1802] iconst_0
+      [1803] putfield #59
         + Fieldref [com/meghan/lightsout/MainActivity.o Z]
-      [1814] aload_0 v0
-      [1815] dup
-      [1816] getfield #66
-        + Fieldref [com/meghan/lightsout/MainActivity.v I]
-      [1819] iconst_1
-      [1820] iadd
-      [1821] putfield #66
-        + Fieldref [com/meghan/lightsout/MainActivity.v I]
-      [1824] aload_0 v0
-      [1825] getfield #63
-        + Fieldref [com/meghan/lightsout/MainActivity.s Landroid/widget/TextView;]
-      [1828] aload_0 v0
-      [1829] getfield #66
-        + Fieldref [com/meghan/lightsout/MainActivity.v I]
-      [1832] invokestatic #107
+      [1806] goto +24 (target=1830)
+      [1809] aload_0 v0
+      [1810] getfield #50
+        + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
+      [1813] aload_0 v0
+      [1814] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [1817] ldc #2
+        + Integer [2130837514]
+      [1819] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [1822] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [1825] aload_0 v0
+      [1826] iconst_1
+      [1827] putfield #59
+        + Fieldref [com/meghan/lightsout/MainActivity.o Z]
+      [1830] aload_0 v0
+      [1831] dup
+      [1832] getfield #70
+        + Fieldref [com/meghan/lightsout/MainActivity.z I]
+      [1835] iconst_1
+      [1836] iadd
+      [1837] putfield #70
+        + Fieldref [com/meghan/lightsout/MainActivity.z I]
+      [1840] aload_0 v0
+      [1841] getfield #65
+        + Fieldref [com/meghan/lightsout/MainActivity.u Landroid/widget/TextView;]
+      [1844] aload_0 v0
+      [1845] getfield #70
+        + Fieldref [com/meghan/lightsout/MainActivity.z I]
+      [1848] invokestatic #114
         + Methodref [java/lang/String.valueOf (I)Ljava/lang/String;]
-      [1835] invokevirtual #89
+      [1851] invokevirtual #93
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [1838] aload_0 v0
-      [1839] invokespecial #92
+      [1854] aload_0 v0
+      [1855] invokespecial #96
         + Methodref [com/meghan/lightsout/MainActivity.a ()V]
-      [1842] return
+      [1858] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 66):
-        - [57] Var: ...[a:android/os/Vibrator], Stack: (empty)
-        - [78] Var: ..., Stack: (empty)
-        - [109] Var: ..., Stack: (empty)
-        - [130] Var: ..., Stack: (empty)
-        - [161] Var: ..., Stack: (empty)
-        - [182] Var: ..., Stack: (empty)
-        - [213] Var: ..., Stack: (empty)
-        - [234] Var: ..., Stack: (empty)
-        - [274] Var: ..., Stack: (empty)
-        - [295] Var: ..., Stack: (empty)
-        - [326] Var: ..., Stack: (empty)
-        - [347] Var: ..., Stack: (empty)
-        - [378] Var: ..., Stack: (empty)
-        - [399] Var: ..., Stack: (empty)
-        - [439] Var: ..., Stack: (empty)
-        - [460] Var: ..., Stack: (empty)
-        - [491] Var: ..., Stack: (empty)
-        - [512] Var: ..., Stack: (empty)
-        - [543] Var: ..., Stack: (empty)
-        - [564] Var: ..., Stack: (empty)
-        - [595] Var: ..., Stack: (empty)
-        - [616] Var: ..., Stack: (empty)
-        - [656] Var: ..., Stack: (empty)
-        - [677] Var: ..., Stack: (empty)
-        - [708] Var: ..., Stack: (empty)
-        - [729] Var: ..., Stack: (empty)
-        - [760] Var: ..., Stack: (empty)
-        - [781] Var: ..., Stack: (empty)
-        - [821] Var: ..., Stack: (empty)
-        - [842] Var: ..., Stack: (empty)
-        - [873] Var: ..., Stack: (empty)
-        - [894] Var: ..., Stack: (empty)
-        - [925] Var: ..., Stack: (empty)
-        - [946] Var: ..., Stack: (empty)
-        - [977] Var: ..., Stack: (empty)
-        - [998] Var: ..., Stack: (empty)
-        - [1029] Var: ..., Stack: (empty)
-        - [1050] Var: ..., Stack: (empty)
-        - [1090] Var: ..., Stack: (empty)
-        - [1111] Var: ..., Stack: (empty)
-        - [1142] Var: ..., Stack: (empty)
-        - [1163] Var: ..., Stack: (empty)
-        - [1194] Var: ..., Stack: (empty)
-        - [1215] Var: ..., Stack: (empty)
-        - [1255] Var: ..., Stack: (empty)
-        - [1276] Var: ..., Stack: (empty)
-        - [1307] Var: ..., Stack: (empty)
-        - [1328] Var: ..., Stack: (empty)
-        - [1359] Var: ..., Stack: (empty)
-        - [1380] Var: ..., Stack: (empty)
-        - [1411] Var: ..., Stack: (empty)
-        - [1432] Var: ..., Stack: (empty)
-        - [1472] Var: ..., Stack: (empty)
-        - [1493] Var: ..., Stack: (empty)
-        - [1524] Var: ..., Stack: (empty)
-        - [1545] Var: ..., Stack: (empty)
-        - [1576] Var: ..., Stack: (empty)
-        - [1597] Var: ..., Stack: (empty)
-        - [1637] Var: ..., Stack: (empty)
-        - [1658] Var: ..., Stack: (empty)
-        - [1689] Var: ..., Stack: (empty)
-        - [1710] Var: ..., Stack: (empty)
-        - [1741] Var: ..., Stack: (empty)
-        - [1762] Var: ..., Stack: (empty)
-        - [1793] Var: ..., Stack: (empty)
-        - [1814] Var: ..., Stack: (empty)
+      + Stack map table attribute (count = 68):
+        - [12] Var: ..., Stack: (empty)
+        - [33] Var: ..., Stack: (empty)
+        - [73] Var: ..., Stack: (empty)
+        - [94] Var: ..., Stack: (empty)
+        - [125] Var: ..., Stack: (empty)
+        - [146] Var: ..., Stack: (empty)
+        - [177] Var: ..., Stack: (empty)
+        - [198] Var: ..., Stack: (empty)
+        - [229] Var: ..., Stack: (empty)
+        - [250] Var: ..., Stack: (empty)
+        - [290] Var: ..., Stack: (empty)
+        - [311] Var: ..., Stack: (empty)
+        - [342] Var: ..., Stack: (empty)
+        - [363] Var: ..., Stack: (empty)
+        - [394] Var: ..., Stack: (empty)
+        - [415] Var: ..., Stack: (empty)
+        - [455] Var: ..., Stack: (empty)
+        - [476] Var: ..., Stack: (empty)
+        - [507] Var: ..., Stack: (empty)
+        - [528] Var: ..., Stack: (empty)
+        - [559] Var: ..., Stack: (empty)
+        - [580] Var: ..., Stack: (empty)
+        - [611] Var: ..., Stack: (empty)
+        - [632] Var: ..., Stack: (empty)
+        - [672] Var: ..., Stack: (empty)
+        - [693] Var: ..., Stack: (empty)
+        - [724] Var: ..., Stack: (empty)
+        - [745] Var: ..., Stack: (empty)
+        - [776] Var: ..., Stack: (empty)
+        - [797] Var: ..., Stack: (empty)
+        - [837] Var: ..., Stack: (empty)
+        - [858] Var: ..., Stack: (empty)
+        - [889] Var: ..., Stack: (empty)
+        - [910] Var: ..., Stack: (empty)
+        - [941] Var: ..., Stack: (empty)
+        - [962] Var: ..., Stack: (empty)
+        - [993] Var: ..., Stack: (empty)
+        - [1014] Var: ..., Stack: (empty)
+        - [1045] Var: ..., Stack: (empty)
+        - [1066] Var: ..., Stack: (empty)
+        - [1106] Var: ..., Stack: (empty)
+        - [1127] Var: ..., Stack: (empty)
+        - [1158] Var: ..., Stack: (empty)
+        - [1179] Var: ..., Stack: (empty)
+        - [1210] Var: ..., Stack: (empty)
+        - [1231] Var: ..., Stack: (empty)
+        - [1271] Var: ..., Stack: (empty)
+        - [1292] Var: ..., Stack: (empty)
+        - [1323] Var: ..., Stack: (empty)
+        - [1344] Var: ..., Stack: (empty)
+        - [1375] Var: ..., Stack: (empty)
+        - [1396] Var: ..., Stack: (empty)
+        - [1427] Var: ..., Stack: (empty)
+        - [1448] Var: ..., Stack: (empty)
+        - [1488] Var: ..., Stack: (empty)
+        - [1509] Var: ..., Stack: (empty)
+        - [1540] Var: ..., Stack: (empty)
+        - [1561] Var: ..., Stack: (empty)
+        - [1592] Var: ..., Stack: (empty)
+        - [1613] Var: ..., Stack: (empty)
+        - [1653] Var: ..., Stack: (empty)
+        - [1674] Var: ..., Stack: (empty)
+        - [1705] Var: ..., Stack: (empty)
+        - [1726] Var: ..., Stack: (empty)
+        - [1757] Var: ..., Stack: (empty)
+        - [1778] Var: ..., Stack: (empty)
+        - [1809] Var: ..., Stack: (empty)
+        - [1830] Var: ..., Stack: (empty)
     + Runtime invisible annotations attribute:
       - Annotation [Landroid/annotation/SuppressLint;]:
         - Array element value [value]:
@@ -57631,58 +57712,58 @@ Methods (count = 9):
         + Fieldref [com/meghan/lightsout/MainActivity.r Z]
       [60] ifne +72 (target=132)
       [63] aload_0 v0
-      [64] getfield #64
-        + Fieldref [com/meghan/lightsout/MainActivity.t Landroid/widget/Chronometer;]
-      [67] invokevirtual #88
+      [64] getfield #66
+        + Fieldref [com/meghan/lightsout/MainActivity.v Landroid/widget/Chronometer;]
+      [67] invokevirtual #92
         + Methodref [android/widget/Chronometer.stop ()V]
-      [70] new #25
+      [70] new #27
         + Class [android/app/AlertDialog$Builder]
       [73] dup
       [74] aload_0 v0
-      [75] invokespecial #71
+      [75] invokespecial #75
         + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
       [78] astore_1 v1
       [79] aload_1 v1
-      [80] ldc #18
+      [80] ldc #21
         + String [YOU WON!]
-      [82] invokevirtual #77
+      [82] invokevirtual #81
         + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
       [85] pop
       [86] aload_1 v1
-      [87] ldc #17
+      [87] ldc #20
         + String [Play again?]
-      [89] invokevirtual #74
+      [89] invokevirtual #78
         + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
       [92] iconst_0
-      [93] invokevirtual #73
+      [93] invokevirtual #77
         + Methodref [android/app/AlertDialog$Builder.setCancelable (Z)Landroid/app/AlertDialog$Builder;]
-      [96] ldc #19
+      [96] ldc #22
         + String [Yes yes yes RIGHT NOW!]
-      [98] new #39
+      [98] new #41
         + Class [com/meghan/lightsout/a]
       [101] dup
       [102] aload_0 v0
-      [103] invokespecial #105
+      [103] invokespecial #112
         + Methodref [com/meghan/lightsout/a.<init> (Lcom/meghan/lightsout/MainActivity;)V]
-      [106] invokevirtual #76
+      [106] invokevirtual #80
         + Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
-      [109] ldc #20
+      [109] ldc #23
         + String [no I don't like fun]
-      [111] new #40
+      [111] new #42
         + Class [com/meghan/lightsout/b]
       [114] dup
       [115] aload_0 v0
-      [116] invokespecial #106
+      [116] invokespecial #113
         + Methodref [com/meghan/lightsout/b.<init> (Lcom/meghan/lightsout/MainActivity;)V]
-      [119] invokevirtual #75
+      [119] invokevirtual #79
         + Methodref [android/app/AlertDialog$Builder.setNegativeButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
       [122] pop
       [123] aload_1 v1
-      [124] invokevirtual #72
+      [124] invokevirtual #76
         + Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
       [127] astore_2 v2
       [128] aload_2 v2
-      [129] invokevirtual #70
+      [129] invokevirtual #74
         + Methodref [android/app/AlertDialog.show ()V]
       [132] return
       Code attribute exceptions (count = 0):
@@ -57693,387 +57774,515 @@ Methods (count = 9):
     Access flags: 0x2
       = private void b()
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 41, locals = 1, stack = 3):
+    + Code attribute instructions (code length = 6, locals = 1, stack = 2):
       [0] aload_0 v0
       [1] iconst_0
-      [2] putfield #66
-        + Fieldref [com/meghan/lightsout/MainActivity.v I]
-      [5] aload_0 v0
-      [6] getfield #63
-        + Fieldref [com/meghan/lightsout/MainActivity.s Landroid/widget/TextView;]
-      [9] aload_0 v0
-      [10] getfield #66
-        + Fieldref [com/meghan/lightsout/MainActivity.v I]
-      [13] invokestatic #107
-        + Methodref [java/lang/String.valueOf (I)Ljava/lang/String;]
-      [16] invokevirtual #89
-        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [19] aload_0 v0
-      [20] invokespecial #94
-        + Methodref [com/meghan/lightsout/MainActivity.c ()V]
-      [23] aload_0 v0
-      [24] getfield #64
-        + Fieldref [com/meghan/lightsout/MainActivity.t Landroid/widget/Chronometer;]
-      [27] invokestatic #81
-        + Methodref [android/os/SystemClock.elapsedRealtime ()J]
-      [30] invokevirtual #86
-        + Methodref [android/widget/Chronometer.setBase (J)V]
-      [33] aload_0 v0
-      [34] getfield #64
-        + Fieldref [com/meghan/lightsout/MainActivity.t Landroid/widget/Chronometer;]
-      [37] invokevirtual #87
-        + Methodref [android/widget/Chronometer.start ()V]
-      [40] return
+      [2] putfield #63
+        + Fieldref [com/meghan/lightsout/MainActivity.s Z]
+      [5] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
   + Method:       c()V
     Access flags: 0x2
       = private void c()
-    Class member attributes (count = 2):
-    + Code attribute instructions (code length = 459, locals = 2, stack = 3):
-      [0] new #42
-        + Class [java/util/Random]
-      [3] dup
-      [4] invokespecial #108
-        + Methodref [java/util/Random.<init> ()V]
-      [7] astore_1 v1
-      [8] aload_0 v0
-      [9] aload_1 v1
-      [10] invokevirtual #109
-        + Methodref [java/util/Random.nextBoolean ()Z]
-      [13] putfield #54
-        + Fieldref [com/meghan/lightsout/MainActivity.j Z]
-      [16] aload_0 v0
-      [17] getfield #54
-        + Fieldref [com/meghan/lightsout/MainActivity.j Z]
-      [20] ifeq +22 (target=42)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 41, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] iconst_0
+      [2] putfield #70
+        + Fieldref [com/meghan/lightsout/MainActivity.z I]
+      [5] aload_0 v0
+      [6] getfield #65
+        + Fieldref [com/meghan/lightsout/MainActivity.u Landroid/widget/TextView;]
+      [9] aload_0 v0
+      [10] getfield #70
+        + Fieldref [com/meghan/lightsout/MainActivity.z I]
+      [13] invokestatic #114
+        + Methodref [java/lang/String.valueOf (I)Ljava/lang/String;]
+      [16] invokevirtual #93
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [19] aload_0 v0
+      [20] invokespecial #102
+        + Methodref [com/meghan/lightsout/MainActivity.f ()V]
       [23] aload_0 v0
-      [24] getfield #45
-        + Fieldref [com/meghan/lightsout/MainActivity.a Landroid/widget/Button;]
-      [27] aload_0 v0
-      [28] invokevirtual #100
-        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [31] ldc #2
-        + Integer [2130837512]
-      [33] invokevirtual #80
-        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [36] invokevirtual #85
-        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [39] goto +19 (target=58)
+      [24] getfield #66
+        + Fieldref [com/meghan/lightsout/MainActivity.v Landroid/widget/Chronometer;]
+      [27] invokestatic #85
+        + Methodref [android/os/SystemClock.elapsedRealtime ()J]
+      [30] invokevirtual #90
+        + Methodref [android/widget/Chronometer.setBase (J)V]
+      [33] aload_0 v0
+      [34] getfield #66
+        + Fieldref [com/meghan/lightsout/MainActivity.v Landroid/widget/Chronometer;]
+      [37] invokevirtual #91
+        + Methodref [android/widget/Chronometer.start ()V]
+      [40] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Z)V
+    Access flags: 0x2
+      = private void a(boolean)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 70, locals = 2, stack = 2):
+      [0] iload_1 v1
+      [1] ifne +37 (target=38)
+      [4] aload_0 v0
+      [5] invokespecial #100
+        + Methodref [com/meghan/lightsout/MainActivity.d ()V]
+      [8] aload_0 v0
+      [9] getfield #68
+        + Fieldref [com/meghan/lightsout/MainActivity.x Landroid/view/MenuItem;]
+      [12] iconst_0
+      [13] invokeinterface #119
+        + InterfaceMethodref [android/view/MenuItem.setVisible (Z)Landroid/view/MenuItem;]
+      [18] pop
+      [19] aload_0 v0
+      [20] getfield #67
+        + Fieldref [com/meghan/lightsout/MainActivity.w Landroid/view/MenuItem;]
+      [23] iconst_1
+      [24] invokeinterface #119
+        + InterfaceMethodref [android/view/MenuItem.setVisible (Z)Landroid/view/MenuItem;]
+      [29] pop
+      [30] aload_0 v0
+      [31] iconst_0
+      [32] putfield #64
+        + Fieldref [com/meghan/lightsout/MainActivity.t Z]
+      [35] goto +34 (target=69)
+      [38] aload_0 v0
+      [39] invokespecial #101
+        + Methodref [com/meghan/lightsout/MainActivity.e ()V]
       [42] aload_0 v0
-      [43] getfield #45
+      [43] getfield #68
+        + Fieldref [com/meghan/lightsout/MainActivity.x Landroid/view/MenuItem;]
+      [46] iconst_1
+      [47] invokeinterface #119
+        + InterfaceMethodref [android/view/MenuItem.setVisible (Z)Landroid/view/MenuItem;]
+      [52] pop
+      [53] aload_0 v0
+      [54] getfield #67
+        + Fieldref [com/meghan/lightsout/MainActivity.w Landroid/view/MenuItem;]
+      [57] iconst_0
+      [58] invokeinterface #119
+        + InterfaceMethodref [android/view/MenuItem.setVisible (Z)Landroid/view/MenuItem;]
+      [63] pop
+      [64] aload_0 v0
+      [65] iconst_1
+      [66] putfield #64
+        + Fieldref [com/meghan/lightsout/MainActivity.t Z]
+      [69] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [38] Var: ..., Stack: (empty)
+        - [69] Var: ..., Stack: (empty)
+  + Method:       d()V
+    Access flags: 0x2
+      = private void d()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 23, locals = 1, stack = 5):
+      [0] aload_0 v0
+      [1] aload_0 v0
+      [2] getfield #66
+        + Fieldref [com/meghan/lightsout/MainActivity.v Landroid/widget/Chronometer;]
+      [5] invokevirtual #89
+        + Methodref [android/widget/Chronometer.getBase ()J]
+      [8] invokestatic #85
+        + Methodref [android/os/SystemClock.elapsedRealtime ()J]
+      [11] lsub
+      [12] putfield #69
+        + Fieldref [com/meghan/lightsout/MainActivity.y J]
+      [15] aload_0 v0
+      [16] getfield #66
+        + Fieldref [com/meghan/lightsout/MainActivity.v Landroid/widget/Chronometer;]
+      [19] invokevirtual #92
+        + Methodref [android/widget/Chronometer.stop ()V]
+      [22] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       e()V
+    Access flags: 0x2
+      = private void e()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 28, locals = 1, stack = 5):
+      [0] aload_0 v0
+      [1] getfield #66
+        + Fieldref [com/meghan/lightsout/MainActivity.v Landroid/widget/Chronometer;]
+      [4] invokestatic #85
+        + Methodref [android/os/SystemClock.elapsedRealtime ()J]
+      [7] aload_0 v0
+      [8] getfield #69
+        + Fieldref [com/meghan/lightsout/MainActivity.y J]
+      [11] ladd
+      [12] invokevirtual #90
+        + Methodref [android/widget/Chronometer.setBase (J)V]
+      [15] aload_0 v0
+      [16] getfield #66
+        + Fieldref [com/meghan/lightsout/MainActivity.v Landroid/widget/Chronometer;]
+      [19] invokevirtual #91
+        + Methodref [android/widget/Chronometer.start ()V]
+      [22] aload_0 v0
+      [23] lconst_0
+      [24] putfield #69
+        + Fieldref [com/meghan/lightsout/MainActivity.y J]
+      [27] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       f()V
+    Access flags: 0x2
+      = private void f()
+    Class member attributes (count = 2):
+    + Code attribute instructions (code length = 469, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] iconst_1
+      [2] putfield #63
+        + Fieldref [com/meghan/lightsout/MainActivity.s Z]
+      [5] aload_0 v0
+      [6] iconst_1
+      [7] putfield #64
+        + Fieldref [com/meghan/lightsout/MainActivity.t Z]
+      [10] new #44
+        + Class [java/util/Random]
+      [13] dup
+      [14] invokespecial #115
+        + Methodref [java/util/Random.<init> ()V]
+      [17] astore_1 v1
+      [18] aload_0 v0
+      [19] aload_1 v1
+      [20] invokevirtual #116
+        + Methodref [java/util/Random.nextBoolean ()Z]
+      [23] putfield #54
+        + Fieldref [com/meghan/lightsout/MainActivity.j Z]
+      [26] aload_0 v0
+      [27] getfield #54
+        + Fieldref [com/meghan/lightsout/MainActivity.j Z]
+      [30] ifeq +22 (target=52)
+      [33] aload_0 v0
+      [34] getfield #45
         + Fieldref [com/meghan/lightsout/MainActivity.a Landroid/widget/Button;]
-      [46] aload_0 v0
-      [47] invokevirtual #100
+      [37] aload_0 v0
+      [38] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [50] ldc #1
-        + Integer [2130837511]
-      [52] invokevirtual #80
+      [41] ldc #2
+        + Integer [2130837514]
+      [43] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [55] invokevirtual #85
+      [46] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [58] aload_0 v0
-      [59] aload_1 v1
-      [60] invokevirtual #109
+      [49] goto +19 (target=68)
+      [52] aload_0 v0
+      [53] getfield #45
+        + Fieldref [com/meghan/lightsout/MainActivity.a Landroid/widget/Button;]
+      [56] aload_0 v0
+      [57] invokevirtual #108
+        + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [60] ldc #1
+        + Integer [2130837513]
+      [62] invokevirtual #84
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [65] invokevirtual #88
+        + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
+      [68] aload_0 v0
+      [69] aload_1 v1
+      [70] invokevirtual #116
         + Methodref [java/util/Random.nextBoolean ()Z]
-      [63] putfield #55
+      [73] putfield #55
         + Fieldref [com/meghan/lightsout/MainActivity.k Z]
-      [66] aload_0 v0
-      [67] getfield #55
+      [76] aload_0 v0
+      [77] getfield #55
         + Fieldref [com/meghan/lightsout/MainActivity.k Z]
-      [70] ifeq +22 (target=92)
-      [73] aload_0 v0
-      [74] getfield #46
+      [80] ifeq +22 (target=102)
+      [83] aload_0 v0
+      [84] getfield #46
         + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
-      [77] aload_0 v0
-      [78] invokevirtual #100
+      [87] aload_0 v0
+      [88] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [81] ldc #2
-        + Integer [2130837512]
-      [83] invokevirtual #80
+      [91] ldc #2
+        + Integer [2130837514]
+      [93] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [86] invokevirtual #85
+      [96] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [89] goto +19 (target=108)
-      [92] aload_0 v0
-      [93] getfield #46
+      [99] goto +19 (target=118)
+      [102] aload_0 v0
+      [103] getfield #46
         + Fieldref [com/meghan/lightsout/MainActivity.b Landroid/widget/Button;]
-      [96] aload_0 v0
-      [97] invokevirtual #100
+      [106] aload_0 v0
+      [107] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [100] ldc #1
-        + Integer [2130837511]
-      [102] invokevirtual #80
+      [110] ldc #1
+        + Integer [2130837513]
+      [112] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [105] invokevirtual #85
+      [115] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [108] aload_0 v0
-      [109] aload_1 v1
-      [110] invokevirtual #109
+      [118] aload_0 v0
+      [119] aload_1 v1
+      [120] invokevirtual #116
         + Methodref [java/util/Random.nextBoolean ()Z]
-      [113] putfield #56
+      [123] putfield #56
         + Fieldref [com/meghan/lightsout/MainActivity.l Z]
-      [116] aload_0 v0
-      [117] getfield #56
+      [126] aload_0 v0
+      [127] getfield #56
         + Fieldref [com/meghan/lightsout/MainActivity.l Z]
-      [120] ifeq +22 (target=142)
-      [123] aload_0 v0
-      [124] getfield #47
+      [130] ifeq +22 (target=152)
+      [133] aload_0 v0
+      [134] getfield #47
         + Fieldref [com/meghan/lightsout/MainActivity.c Landroid/widget/Button;]
-      [127] aload_0 v0
-      [128] invokevirtual #100
+      [137] aload_0 v0
+      [138] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [131] ldc #2
-        + Integer [2130837512]
-      [133] invokevirtual #80
+      [141] ldc #2
+        + Integer [2130837514]
+      [143] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [136] invokevirtual #85
+      [146] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [139] goto +19 (target=158)
-      [142] aload_0 v0
-      [143] getfield #47
+      [149] goto +19 (target=168)
+      [152] aload_0 v0
+      [153] getfield #47
         + Fieldref [com/meghan/lightsout/MainActivity.c Landroid/widget/Button;]
-      [146] aload_0 v0
-      [147] invokevirtual #100
+      [156] aload_0 v0
+      [157] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [150] ldc #1
-        + Integer [2130837511]
-      [152] invokevirtual #80
+      [160] ldc #1
+        + Integer [2130837513]
+      [162] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [155] invokevirtual #85
+      [165] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [158] aload_0 v0
-      [159] aload_1 v1
-      [160] invokevirtual #109
+      [168] aload_0 v0
+      [169] aload_1 v1
+      [170] invokevirtual #116
         + Methodref [java/util/Random.nextBoolean ()Z]
-      [163] putfield #57
+      [173] putfield #57
         + Fieldref [com/meghan/lightsout/MainActivity.m Z]
-      [166] aload_0 v0
-      [167] getfield #57
+      [176] aload_0 v0
+      [177] getfield #57
         + Fieldref [com/meghan/lightsout/MainActivity.m Z]
-      [170] ifeq +22 (target=192)
-      [173] aload_0 v0
-      [174] getfield #48
+      [180] ifeq +22 (target=202)
+      [183] aload_0 v0
+      [184] getfield #48
         + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
-      [177] aload_0 v0
-      [178] invokevirtual #100
+      [187] aload_0 v0
+      [188] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [181] ldc #2
-        + Integer [2130837512]
-      [183] invokevirtual #80
+      [191] ldc #2
+        + Integer [2130837514]
+      [193] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [186] invokevirtual #85
+      [196] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [189] goto +19 (target=208)
-      [192] aload_0 v0
-      [193] getfield #48
+      [199] goto +19 (target=218)
+      [202] aload_0 v0
+      [203] getfield #48
         + Fieldref [com/meghan/lightsout/MainActivity.d Landroid/widget/Button;]
-      [196] aload_0 v0
-      [197] invokevirtual #100
+      [206] aload_0 v0
+      [207] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [200] ldc #1
-        + Integer [2130837511]
-      [202] invokevirtual #80
+      [210] ldc #1
+        + Integer [2130837513]
+      [212] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [205] invokevirtual #85
+      [215] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [208] aload_0 v0
-      [209] aload_1 v1
-      [210] invokevirtual #109
+      [218] aload_0 v0
+      [219] aload_1 v1
+      [220] invokevirtual #116
         + Methodref [java/util/Random.nextBoolean ()Z]
-      [213] putfield #58
+      [223] putfield #58
         + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [216] aload_0 v0
-      [217] getfield #58
+      [226] aload_0 v0
+      [227] getfield #58
         + Fieldref [com/meghan/lightsout/MainActivity.n Z]
-      [220] ifeq +22 (target=242)
-      [223] aload_0 v0
-      [224] getfield #49
+      [230] ifeq +22 (target=252)
+      [233] aload_0 v0
+      [234] getfield #49
         + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
-      [227] aload_0 v0
-      [228] invokevirtual #100
+      [237] aload_0 v0
+      [238] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [231] ldc #2
-        + Integer [2130837512]
-      [233] invokevirtual #80
+      [241] ldc #2
+        + Integer [2130837514]
+      [243] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [236] invokevirtual #85
+      [246] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [239] goto +19 (target=258)
-      [242] aload_0 v0
-      [243] getfield #49
+      [249] goto +19 (target=268)
+      [252] aload_0 v0
+      [253] getfield #49
         + Fieldref [com/meghan/lightsout/MainActivity.e Landroid/widget/Button;]
-      [246] aload_0 v0
-      [247] invokevirtual #100
+      [256] aload_0 v0
+      [257] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [250] ldc #1
-        + Integer [2130837511]
-      [252] invokevirtual #80
+      [260] ldc #1
+        + Integer [2130837513]
+      [262] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [255] invokevirtual #85
+      [265] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [258] aload_0 v0
-      [259] aload_1 v1
-      [260] invokevirtual #109
+      [268] aload_0 v0
+      [269] aload_1 v1
+      [270] invokevirtual #116
         + Methodref [java/util/Random.nextBoolean ()Z]
-      [263] putfield #59
+      [273] putfield #59
         + Fieldref [com/meghan/lightsout/MainActivity.o Z]
-      [266] aload_0 v0
-      [267] getfield #59
+      [276] aload_0 v0
+      [277] getfield #59
         + Fieldref [com/meghan/lightsout/MainActivity.o Z]
-      [270] ifeq +22 (target=292)
-      [273] aload_0 v0
-      [274] getfield #50
+      [280] ifeq +22 (target=302)
+      [283] aload_0 v0
+      [284] getfield #50
         + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
-      [277] aload_0 v0
-      [278] invokevirtual #100
+      [287] aload_0 v0
+      [288] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [281] ldc #2
-        + Integer [2130837512]
-      [283] invokevirtual #80
+      [291] ldc #2
+        + Integer [2130837514]
+      [293] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [286] invokevirtual #85
+      [296] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [289] goto +19 (target=308)
-      [292] aload_0 v0
-      [293] getfield #50
+      [299] goto +19 (target=318)
+      [302] aload_0 v0
+      [303] getfield #50
         + Fieldref [com/meghan/lightsout/MainActivity.f Landroid/widget/Button;]
-      [296] aload_0 v0
-      [297] invokevirtual #100
+      [306] aload_0 v0
+      [307] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [300] ldc #1
-        + Integer [2130837511]
-      [302] invokevirtual #80
+      [310] ldc #1
+        + Integer [2130837513]
+      [312] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [305] invokevirtual #85
+      [315] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [308] aload_0 v0
-      [309] aload_1 v1
-      [310] invokevirtual #109
+      [318] aload_0 v0
+      [319] aload_1 v1
+      [320] invokevirtual #116
         + Methodref [java/util/Random.nextBoolean ()Z]
-      [313] putfield #60
+      [323] putfield #60
         + Fieldref [com/meghan/lightsout/MainActivity.p Z]
-      [316] aload_0 v0
-      [317] getfield #60
+      [326] aload_0 v0
+      [327] getfield #60
         + Fieldref [com/meghan/lightsout/MainActivity.p Z]
-      [320] ifeq +22 (target=342)
-      [323] aload_0 v0
-      [324] getfield #51
+      [330] ifeq +22 (target=352)
+      [333] aload_0 v0
+      [334] getfield #51
         + Fieldref [com/meghan/lightsout/MainActivity.g Landroid/widget/Button;]
-      [327] aload_0 v0
-      [328] invokevirtual #100
+      [337] aload_0 v0
+      [338] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [331] ldc #2
-        + Integer [2130837512]
-      [333] invokevirtual #80
+      [341] ldc #2
+        + Integer [2130837514]
+      [343] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [336] invokevirtual #85
+      [346] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [339] goto +19 (target=358)
-      [342] aload_0 v0
-      [343] getfield #51
+      [349] goto +19 (target=368)
+      [352] aload_0 v0
+      [353] getfield #51
         + Fieldref [com/meghan/lightsout/MainActivity.g Landroid/widget/Button;]
-      [346] aload_0 v0
-      [347] invokevirtual #100
+      [356] aload_0 v0
+      [357] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [350] ldc #1
-        + Integer [2130837511]
-      [352] invokevirtual #80
+      [360] ldc #1
+        + Integer [2130837513]
+      [362] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [355] invokevirtual #85
+      [365] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [358] aload_0 v0
-      [359] aload_1 v1
-      [360] invokevirtual #109
+      [368] aload_0 v0
+      [369] aload_1 v1
+      [370] invokevirtual #116
         + Methodref [java/util/Random.nextBoolean ()Z]
-      [363] putfield #61
+      [373] putfield #61
         + Fieldref [com/meghan/lightsout/MainActivity.q Z]
-      [366] aload_0 v0
-      [367] getfield #61
+      [376] aload_0 v0
+      [377] getfield #61
         + Fieldref [com/meghan/lightsout/MainActivity.q Z]
-      [370] ifeq +22 (target=392)
-      [373] aload_0 v0
-      [374] getfield #52
+      [380] ifeq +22 (target=402)
+      [383] aload_0 v0
+      [384] getfield #52
         + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
-      [377] aload_0 v0
-      [378] invokevirtual #100
+      [387] aload_0 v0
+      [388] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [381] ldc #2
-        + Integer [2130837512]
-      [383] invokevirtual #80
+      [391] ldc #2
+        + Integer [2130837514]
+      [393] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [386] invokevirtual #85
+      [396] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [389] goto +19 (target=408)
-      [392] aload_0 v0
-      [393] getfield #52
+      [399] goto +19 (target=418)
+      [402] aload_0 v0
+      [403] getfield #52
         + Fieldref [com/meghan/lightsout/MainActivity.h Landroid/widget/Button;]
-      [396] aload_0 v0
-      [397] invokevirtual #100
+      [406] aload_0 v0
+      [407] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [400] ldc #1
-        + Integer [2130837511]
-      [402] invokevirtual #80
+      [410] ldc #1
+        + Integer [2130837513]
+      [412] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [405] invokevirtual #85
+      [415] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [408] aload_0 v0
-      [409] aload_1 v1
-      [410] invokevirtual #109
+      [418] aload_0 v0
+      [419] aload_1 v1
+      [420] invokevirtual #116
         + Methodref [java/util/Random.nextBoolean ()Z]
-      [413] putfield #62
+      [423] putfield #62
         + Fieldref [com/meghan/lightsout/MainActivity.r Z]
-      [416] aload_0 v0
-      [417] getfield #62
+      [426] aload_0 v0
+      [427] getfield #62
         + Fieldref [com/meghan/lightsout/MainActivity.r Z]
-      [420] ifeq +22 (target=442)
-      [423] aload_0 v0
-      [424] getfield #53
+      [430] ifeq +22 (target=452)
+      [433] aload_0 v0
+      [434] getfield #53
         + Fieldref [com/meghan/lightsout/MainActivity.i Landroid/widget/Button;]
-      [427] aload_0 v0
-      [428] invokevirtual #100
+      [437] aload_0 v0
+      [438] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [431] ldc #2
-        + Integer [2130837512]
-      [433] invokevirtual #80
+      [441] ldc #2
+        + Integer [2130837514]
+      [443] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [436] invokevirtual #85
+      [446] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [439] goto +19 (target=458)
-      [442] aload_0 v0
-      [443] getfield #53
+      [449] goto +19 (target=468)
+      [452] aload_0 v0
+      [453] getfield #53
         + Fieldref [com/meghan/lightsout/MainActivity.i Landroid/widget/Button;]
-      [446] aload_0 v0
-      [447] invokevirtual #100
+      [456] aload_0 v0
+      [457] invokevirtual #108
         + Methodref [com/meghan/lightsout/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [450] ldc #1
-        + Integer [2130837511]
-      [452] invokevirtual #80
+      [460] ldc #1
+        + Integer [2130837513]
+      [462] invokevirtual #84
         + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
-      [455] invokevirtual #85
+      [465] invokevirtual #88
         + Methodref [android/widget/Button.setBackground (Landroid/graphics/drawable/Drawable;)V]
-      [458] return
+      [468] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 18):
-        - [42] Var: ...[a:java/util/Random], Stack: (empty)
-        - [58] Var: ..., Stack: (empty)
-        - [92] Var: ..., Stack: (empty)
-        - [108] Var: ..., Stack: (empty)
-        - [142] Var: ..., Stack: (empty)
-        - [158] Var: ..., Stack: (empty)
-        - [192] Var: ..., Stack: (empty)
-        - [208] Var: ..., Stack: (empty)
-        - [242] Var: ..., Stack: (empty)
-        - [258] Var: ..., Stack: (empty)
-        - [292] Var: ..., Stack: (empty)
-        - [308] Var: ..., Stack: (empty)
-        - [342] Var: ..., Stack: (empty)
-        - [358] Var: ..., Stack: (empty)
-        - [392] Var: ..., Stack: (empty)
-        - [408] Var: ..., Stack: (empty)
-        - [442] Var: ..., Stack: (empty)
-        - [458] Var: ..., Stack: (empty)
+        - [52] Var: ...[a:java/util/Random], Stack: (empty)
+        - [68] Var: ..., Stack: (empty)
+        - [102] Var: ..., Stack: (empty)
+        - [118] Var: ..., Stack: (empty)
+        - [152] Var: ..., Stack: (empty)
+        - [168] Var: ..., Stack: (empty)
+        - [202] Var: ..., Stack: (empty)
+        - [218] Var: ..., Stack: (empty)
+        - [252] Var: ..., Stack: (empty)
+        - [268] Var: ..., Stack: (empty)
+        - [302] Var: ..., Stack: (empty)
+        - [318] Var: ..., Stack: (empty)
+        - [352] Var: ..., Stack: (empty)
+        - [368] Var: ..., Stack: (empty)
+        - [402] Var: ..., Stack: (empty)
+        - [418] Var: ..., Stack: (empty)
+        - [452] Var: ..., Stack: (empty)
+        - [468] Var: ..., Stack: (empty)
     + Runtime invisible annotations attribute:
       - Annotation [Landroid/annotation/SuppressLint;]:
         - Array element value [value]:
@@ -58085,7 +58294,18 @@ Methods (count = 9):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
-      [1] invokespecial #93
+      [1] invokespecial #99
+        + Methodref [com/meghan/lightsout/MainActivity.c ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(Lcom/meghan/lightsout/MainActivity;)V
+    Access flags: 0x1008
+      = static synthetic void b(com.meghan.lightsout.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #98
         + Methodref [com/meghan/lightsout/MainActivity.b ()V]
       [4] return
       Code attribute exceptions (count = 0):
@@ -58176,16 +58396,19 @@ _____________________________________________________________________
 Interfaces (count = 1):
   + Class [android/content/DialogInterface$OnClickListener]
 
-Constant Pool (count = 24):
+Constant Pool (count = 29):
   + Class [android/content/DialogInterface]
   + Class [android/content/DialogInterface$OnClickListener]
+  + Class [com/meghan/lightsout/MainActivity]
   + Class [com/meghan/lightsout/b]
   + Class [java/lang/Object]
   + Fieldref [com/meghan/lightsout/b.a Lcom/meghan/lightsout/MainActivity;]
+  + Methodref [com/meghan/lightsout/MainActivity.b (Lcom/meghan/lightsout/MainActivity;)V]
   + Methodref [java/lang/Object.<init> ()V]
   + InterfaceMethodref [android/content/DialogInterface.cancel ()V]
   + NameAndType [<init> ()V]
   + NameAndType [a Lcom/meghan/lightsout/MainActivity;]
+  + NameAndType [b (Lcom/meghan/lightsout/MainActivity;)V]
   + NameAndType [cancel ()V]
   + Utf8 [()V]
   + Utf8 [(Landroid/content/DialogInterface;I)V]
@@ -58196,7 +58419,9 @@ Constant Pool (count = 24):
   + Utf8 [a]
   + Utf8 [android/content/DialogInterface]
   + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [b]
   + Utf8 [cancel]
+  + Utf8 [com/meghan/lightsout/MainActivity]
   + Utf8 [com/meghan/lightsout/b]
   + Utf8 [java/lang/Object]
   + Utf8 [onClick]
@@ -58214,10 +58439,10 @@ Methods (count = 2):
     + Code attribute instructions (code length = 10, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] putfield #5
+      [2] putfield #6
         + Fieldref [com/meghan/lightsout/b.a Lcom/meghan/lightsout/MainActivity;]
       [5] aload_0 v0
-      [6] invokespecial #6
+      [6] invokespecial #8
         + Methodref [java/lang/Object.<init> ()V]
       [9] return
       Code attribute exceptions (count = 0):
@@ -58226,11 +58451,16 @@ Methods (count = 2):
     Access flags: 0x1
       = public void onClick(android.content.DialogInterface,int)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 7, locals = 3, stack = 1):
-      [0] aload_1 v1
-      [1] invokeinterface #7
+    + Code attribute instructions (code length = 14, locals = 3, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #6
+        + Fieldref [com/meghan/lightsout/b.a Lcom/meghan/lightsout/MainActivity;]
+      [4] invokestatic #7
+        + Methodref [com/meghan/lightsout/MainActivity.b (Lcom/meghan/lightsout/MainActivity;)V]
+      [7] aload_1 v1
+      [8] invokeinterface #9
         + InterfaceMethodref [android/content/DialogInterface.cancel ()V]
-      [6] return
+      [13] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
 
